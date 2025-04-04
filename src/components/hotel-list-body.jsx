@@ -16,7 +16,7 @@ const HotelListBody = ({ hotels }) => {
           <div className='drop-shadow-xl mb-12 md:mb-20'>
 
             {/* Desktop */}
-            <div className='hidden lg:grid grid-cols-2 h-120 rounded-2xl overflow-hidden'>
+            <div className='hidden lg:grid grid-cols-2 h-120  overflow-hidden'>
               {/* Hotel Image */}
               <div>
                 <img src={item.image} alt='hotelImage' className='object-cover w-full h-120' />
@@ -49,7 +49,7 @@ const HotelListBody = ({ hotels }) => {
                     <p className='text-lg font-bold text-black'>From</p>
                     <div className='text-lg font-bold text-black'><span className='text-[#EBBC79] text-2xl'>$ {item.price}</span>  /night</div>
                   </div>
-                  <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 px-6'>
+                  <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 px-6 mt-4'>
                     <p className='text-lg font-bold text-white'>SEE DETAILS</p>
                     <FaArrowRight className='size-6 fill-white' />
                   </button>

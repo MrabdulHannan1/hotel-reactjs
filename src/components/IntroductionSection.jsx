@@ -55,7 +55,7 @@ export const IntroductionSection = () => {
                   </p>
                 </div>
 
-                <Link to='/about' className='bg-myBlue flex items-center gap-2 px-6 py-4 justify-self-end'>
+                <Link to='/about' className='bg-myBlue flex items-center gap-2 px-6 py-4 justify-self-start'>
                   <p className='text-lg font-bold text-white'>ABOUT US</p>
                   <FaArrowRight className='size-6 fill-white' />
                 </Link>
