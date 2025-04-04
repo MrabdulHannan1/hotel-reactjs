@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
 
 @import "tailwindcss";
-
+body {
+  font-family: 'GilroyRegular', sans-serif;
+}
+@font-face {
+  font-family: "GilroyRegular";
+  src: local("GilroyRegular"),
+    url("./assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @theme {
-  --font-myFont: "DM Sans", serif;
+  --font-myFont: "Gilroy", sans-serif;
 
   --color-myGray: #d9d9d9;
   --color-myBlue: #0666EB;
