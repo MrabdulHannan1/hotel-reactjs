@@ -30,9 +30,9 @@ export const IntroductionSection = () => {
             {/* Text content */}
             <div className="w-full lg:w-1/2 max-w-[617px]">
               <div className="space-y-4">
-                <a href="#" className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+                <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
                   We Are Here...
-                </a>
+                </div>
 
                 <h2 className="text-3xl md:text-4xl font-bold text-black md:leading-[49px]">
                   Where Simple Luxury &amp;

@@ -3,7 +3,7 @@ import { hotelCategories } from '../lib/constants'
 
 const HotelListHeader = () => {
   return (
-        <div className="w-full flex flex-col items-center mt-16">
+        <div className="w-full flex flex-col items-center">
           <div className="text-myBlue text-2xl font-medium text-center">
             Accommodations
           </div>
