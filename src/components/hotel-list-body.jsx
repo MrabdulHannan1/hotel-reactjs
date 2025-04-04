@@ -1,12 +1,18 @@
 import React from 'react'
 import { hotelDetails } from '../lib/constants'
 import { FaArrowRight } from "react-icons/fa6";
+import { useNavigate } from 'react-router';
 
-const HotelListBody = () => {
+const HotelListBody = ({ hotels }) => {
+  const navigate = useNavigate();
+
+  const handleSeeDetails = (item) => {
+    navigate('/hotel', { state: { item } });
+  };
   return (
     <div>
       {
-        hotelDetails.map((item) => (
+        hotels.map((item) => (
           <div className='drop-shadow-xl mb-12 md:mb-20'>
 
             {/* Desktop */}
@@ -16,7 +22,7 @@ const HotelListBody = () => {
                 <img src={item.image} alt='hotelImage' className='object-cover w-full h-120' />
               </div>
               {/* Hotel Details */}
-              <div className={`bg-white px-20 flex flex-col justify-center ${item.id % 2 === 0 ? '-order-1' : ''} `}>
+              <div className={`bg-white px-6 xl:px-14 flex flex-col justify-center ${item.id % 2 === 0 ? '-order-1' : ''} `}>
                 <h1 className='text-4xl font-bold text-black'>
                   {item.hotelName}
                 </h1>
@@ -29,11 +35,11 @@ const HotelListBody = () => {
                     View Map
                   </a>
                 </div>
-                <p className='text-lg text-myGrayText mt-2'>{item.details}</p>
+                <p className='text-lg text-myGrayText mt-2 line-clamp-4'>{item.details}</p>
                 <div className='grid grid-cols-3 mt-4 gap-2'>
                   {
-                    item.hotelTags.map((m) => (
-                      <p className='text-lg font-bold text-black'>{m}</p>
+                    item.hotelTags.map((m, i) => (
+                      <p className='text-lg font-bold text-black' key={i}>{m}</p>
                     ))
                   }  
                 </div>
@@ -43,10 +49,10 @@ const HotelListBody = () => {
                     <p className='text-lg font-bold text-black'>From</p>
                     <div className='text-lg font-bold text-black'><span className='text-[#EBBC79] text-2xl'>$ {item.price}</span>  /night</div>
                   </div>
-                  <a href='#' className='bg-myBlue flex items-center gap-2 px-6'>
+                  <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 px-6'>
                     <p className='text-lg font-bold text-white'>SEE DETAILS</p>
                     <FaArrowRight className='size-6 fill-white' />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -74,8 +80,8 @@ const HotelListBody = () => {
                 <p className='text-base md:text-lg text-myGrayText mt-2'>{item.details}</p>
                 <div className='grid grid-cols-2 md:grid-cols-3 mt-4 gap-2'>
                   {
-                    item.hotelTags.map((m) => (
-                      <p className='text-base md:text-lg font-bold text-black'>{m}</p>
+                    item.hotelTags.map((m, i) => (
+                      <p className='text-base md:text-lg font-bold text-black' key={i}>{m}</p>
                     ))
                   }  
                 </div>
@@ -85,10 +91,10 @@ const HotelListBody = () => {
                     <p className='text-base md:text-lg font-bold text-black'>From</p>
                     <div className='text-base md:text-lg font-bold text-black'><span className='text-[#EBBC79] text-xl md:text-2xl '>$ {item.price}</span>  /night</div>
                   </div>
-                  <a href='#' className='bg-myBlue flex items-center gap-2 px-4 md:px-6'>
+                  <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 px-4 md:px-6'>
                     <p className='text-lg font-bold text-white'>SEE DETAILS</p>
                     <FaArrowRight className='size-6 fill-white' />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
