@@ -52,7 +52,7 @@ const ContactForm = () => {
 
 
   return (
-    <div className="space-y-3 w-[50%] justify-self-center pb-6 md:pb-10">
+    <div className="space-y-3 w-full md:w-[70%] lg:w-[50%] justify-self-center pb-6 md:pb-10">
           {/* Name Input Field */}
           <div className="space-y-0.5">
             <label htmlFor="name" className="text-base md:text-lg font-medium text-white">

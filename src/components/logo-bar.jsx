@@ -2,14 +2,19 @@ import React from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 import Logo from '../assets/logo.svg'
 import { Link } from 'react-router'
+import { LanguageDropdown } from './language-dropdown'
 
 const LogoBar = () => {
   return (
     <section className='w-full py-4'>
       <MaxWidthWrapper>
-        <Link to='/' className='w-full flex justify-center'>
-          <img src={Logo} className='h-12 md:h-22 object-contain' alt='Logo' />
-        </Link>
+        <div className='flex items-center justify-between'>
+          <div className='w-31 h-8 hidden md:block' />
+          <Link to='/'>
+            <img src={Logo} className='h-12 md:h-22 object-contain' alt='Logo' />
+          </Link>
+          <LanguageDropdown />
+        </div>
       </MaxWidthWrapper>
     </section>
   )
