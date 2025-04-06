@@ -43,10 +43,10 @@ export function LanguageDropdown() {
   }
 
   return (
-    <div className="relative bg-red-200" ref={dropdownRef}>
+    <div className="relative" ref={dropdownRef}>
       {/* Dropdown trigger button */}
       <button
-        className="flex items-center gap-2 border border-gray-300 bg-white px-2 md:px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none"
+        className="flex items-center gap-2 bg-transparent px-2 md:px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
         onClick={toggleDropdown}
         aria-haspopup="true"
         aria-expanded={isOpen}

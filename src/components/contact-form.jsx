@@ -1,128 +1,124 @@
-import React, { useState } from 'react'
+import { useState } from "react"
 
-const ContactForm = () => {
-
+export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    subject: "",
+    phone: "",
     message: "",
-  });
-
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  })
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-    setErrors({ ...errors, [e.target.id]: "" }); // Clear error on change
-  };
-
-  const validateEmail = (email) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
+    const { name, value } = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Validation checks
-    let newErrors = {
-      name: formData.name.trim() === "" ? "Full Name is required." : "",
-      email: formData.email.trim() === "" ? "Email is required." : !validateEmail(formData.email) ? "Invalid email format" : "",
-      subject: formData.subject.trim() === "" ? "Subject is required." : "",
-      message: formData.message.trim() === "" ? "Message is required." : "",
-    };
-
-    setErrors(newErrors);
-
-    // If any error exists, stop submission
-    if (Object.values(newErrors).some(error => error !== "")) return;
-
-    // Log data
-    console.log("Form Submitted:", formData);
-    // Alert
+    e.preventDefault()
+    console.log("Form submitted:", formData)
+    // Add your form submission logic here
+    // Show success alert
     alert("Form submitted successfully!");
-
-    // Clear form after successful submission
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
-
+  }
 
   return (
-    <div className="space-y-3 w-full md:w-[70%] lg:w-[50%] justify-self-center pb-6 md:pb-10">
-          {/* Name Input Field */}
-          <div className="space-y-0.5">
-            <label htmlFor="name" className="text-base md:text-lg font-medium text-white">
-              Full Name&nbsp;<span className="text-red-600">*</span>&nbsp;
-              {errors.name && <span className="text-red-500 text-sm md:text-base">{errors.name}</span>}
-            </label>
+    <div className="max-w-7xl mx-auto p-6">
+      <form onSubmit={handleSubmit} className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-2">
+            {/*<label htmlFor="firstName" className="block text-sm font-medium">
+              First Name
+            </label>*/}
             <input
-              id="name"
               type="text"
-              value={formData.name}
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
               onChange={handleChange}
-              placeholder="Enter Your Name"
-              className="flex-grow px-4 py-3 w-full border border-white/20 bg-white/10 focus:outline-none focus:ring-2 focus:ring-myBlue transition-all text-white"
+              className="w-full border-b border-black focus:border-myBlue outline-none py-2 bg-transparent placeholder-black"
+              required
+              placeholder="First Name"
             />
           </div>
-          {/* Email Input Field */}
-          <div className="space-y-0.5">
-            <label htmlFor="email" className="text-base md:text-lg font-medium text-white">
-              Email Address&nbsp;<span className="text-red-600">*</span>&nbsp;
-              {errors.email && <span className="text-red-500 text-sm md:text-base">{errors.email}</span>}
-            </label>
+
+          <div className="space-y-2">
+            {/*<label htmlFor="lastName" className="block text-sm font-medium">
+              Last Name
+            </label>*/}
             <input
-              id="email"
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              className="w-full border-b border-black focus:border-myBlue outline-none py-2 bg-transparent placeholder-black"
+              required
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-2">
+            {/*<label htmlFor="email" className="block text-sm font-medium">
+              Email Address
+            </label>*/}
+            <input
               type="email"
+              id="email"
+              name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter Your Email"
-              className="flex-grow px-4 py-3 w-full border border-white/20 bg-white/10 focus:outline-none focus:ring-2 focus:ring-myBlue transition-all text-white"
+              className="w-full border-b border-black focus:border-myBlue outline-none py-2 bg-transparent placeholder-black"
+              required
+              placeholder="Email Address"
             />
           </div>
-          {/* Subject Input Field */}
-          <div className="space-y-0.5">
-            <label htmlFor="subject" className="text-base md:text-lg font-medium text-white">
-              Subject&nbsp;<span className="text-red-600">*</span>&nbsp;
-              {errors.subject && <span className="text-red-500 text-sm md:text-base">{errors.subject}</span>}
-            </label>
+
+          <div className="space-y-2">
+            {/*<label htmlFor="phone" className="block text-sm font-medium">
+              Phone No
+            </label>*/}
             <input
-              id="subject"
-              type="text"
-              value={formData.subject}
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
               onChange={handleChange}
-              placeholder="Enter Subject"
-              className="flex-grow px-4 py-3 w-full border border-white/20 bg-white/10 focus:outline-none focus:ring-2 focus:ring-myBlue transition-all text-white"
+              className="w-full border-b border-black focus:border-myBlue outline-none py-2 bg-transparent placeholder-black"
+              required
+              placeholder="Phone No"
             />
           </div>
-          {/* Message Input Field */}
-          <div className="space-y-0.5">
-            <label htmlFor="message" className="text-base md:text-lg font-medium text-white">
-              Message&nbsp;<span className="text-red-600">*</span>&nbsp;
-              {errors.message && <span className="text-red-500 text-sm md:text-base">{errors.message}</span>}
-            </label>
-            <textarea
-              id="message"
-              typeof="text"
-              rows={6}
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Enter Message"
-              className="flex-grow px-4 py-3 w-full border border-white/20 bg-white/10 focus:outline-none focus:ring-2 focus:ring-myBlue transition-all text-white"
-            />
-          </div>
-          {/* Submit Btn */}
-          <button
-            type="submit"
-            onClick={handleSubmit}
-            className="bg-myBlue flex items-center gap-2 px-6 py-4 justify-self-start text-white text-xl font-semibold w-full justify-center" >
-              Submit
+        </div>
+
+        <div className="space-y-2">
+          {/*<label htmlFor="message" className="block text-sm font-medium">
+            Enter you message...
+          </label>*/}
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full border-b border-black focus:border-myBlue outline-none py-2 bg-transparent resize-none placeholder-black"
+            rows={1}
+            required
+            placeholder="Enter you message..."
+          />
+        </div>
+
+        <div className="flex justify-end">
+          <button type="submit" className="bg-myBlue hover:bg-myBlue/80 text-white px-6 py-2 text-base md:text-lg">
+            Send Message
           </button>
         </div>
+      </form>
+    </div>
   )
 }
 
-export default ContactForm
