@@ -2,17 +2,19 @@ import React from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 import FooterLogo from '../assets/footer-logo.png'
 import { Link } from 'react-router'
+import ContactForm from './contact-form'
 
 const Footer = () => {
   return (
     <footer className='bg-myFooterBg'>
       <MaxWidthWrapper>
         <div className='py-14 md:py-20'>
-          <p className='text-white text-center text-3xl md:text-5xl font-bold pb-14 md:pb-20'>
+          <p className='text-white text-center text-3xl md:text-5xl font-bold pb-6 md:pb-10'>
             Sign Up For Exclusive
             <br/>
             Offers From Us
           </p>
+          <ContactForm />
           <hr className='my-4 border-gray-400' />
           <Link to='/' className='py-6 flex justify-center'>
             <img src={FooterLogo} alt='footer-logo' className='h-12 md:h-22 object-cover' />
