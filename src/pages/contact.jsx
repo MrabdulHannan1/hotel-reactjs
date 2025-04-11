@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import ContactBar from '../components/contact-bar';
 import LogoBar from '../components/logo-bar';
 import Footer from '../components/footer';
 import ContactBody from '../components/contact-body';
@@ -10,7 +9,6 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <ContactBar />
       <LogoBar />
       <ContactBody />
       <Footer />

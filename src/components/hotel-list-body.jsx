@@ -19,7 +19,7 @@ const HotelListBody = ({ hotels }) => {
             <div className='hidden lg:grid grid-cols-2 h-120  overflow-hidden'>
               {/* Hotel Image */}
               <div>
-                <img src={item.image} alt='hotelImage' className='object-cover w-full h-120' />
+                <img src={item.banner} alt='hotelImage' className='object-cover w-full h-120' />
               </div>
               {/* Hotel Details */}
               <div className={`bg-white px-6 xl:px-14 flex flex-col justify-center ${item.id % 2 === 0 ? '-order-1' : ''} `}>

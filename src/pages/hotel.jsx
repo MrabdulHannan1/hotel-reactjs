@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
-import ContactBar from '../components/contact-bar';
 import LogoBar from '../components/logo-bar';
 import HotelHeroSection from '../components/hotel-hero-section';
 import MaxWidthWrapper from '../components/max-width-wrapper';
@@ -9,6 +8,8 @@ import HotelPhotosSection from '../components/hotel-photos-section';
 import HotelLocationSection from '../components/hotel-location-section';
 import HotelReviewSection from '../components/hotel-review-section';
 import Footer from '../components/footer';
+import HotelFacilitiesSection from '../components/hotel-facilities-section';
+import HotelRoomSection from '../components/hotel-room-section';
 
 const Hotel = () => {
   const location = useLocation();
@@ -26,8 +27,8 @@ const Hotel = () => {
   // Refs for different sections
   const overviewRef = useRef(null);
   const photosRef = useRef(null);
+  const roomRef = useRef(null);
   const locationRef = useRef(null);
-  const reviewsRef = useRef(null);
 
   // Function to handle smooth scrolling
   const scrollToSection = (ref) => {
@@ -36,43 +37,69 @@ const Hotel = () => {
 
   return (
     <div>
-      <ContactBar />
       <LogoBar />
       <HotelHeroSection 
-        image={item.image} 
+        image={item.banner} 
         location={item.location} 
         name={item.hotelName} 
-        price={item.price} 
+        tag={item.hotelTag} 
       />
 
       {/* Navigation Section */}
       <section className='bg-myFooterBg hidden md:block'>
         <MaxWidthWrapper>
           <div className='grid grid-cols-4 py-4'>
-            <button onClick={() => scrollToSection(overviewRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal'>Overview</button>
-            <button onClick={() => scrollToSection(photosRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal'>Photos</button>
-            <button onClick={() => scrollToSection(locationRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal'>Location</button>
-            <button onClick={() => scrollToSection(reviewsRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal'>Reviews</button>
+            <button onClick={() => scrollToSection(overviewRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Overview</button>
+            <button onClick={() => scrollToSection(photosRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Photos</button>
+            <button onClick={() => scrollToSection(roomRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Room</button>
+            <button onClick={() => scrollToSection(locationRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Location</button>
           </div>
         </MaxWidthWrapper>
       </section>
 
       {/* Hotel Sections */}
       <div ref={overviewRef}>
-        <HotelOverviewSection details={item.details} fimage={item.fimage} />
+        <HotelOverviewSection
+          overviewDetails1={item.overviewDetails1}
+          overviewDetails2={item.overviewDetails2}
+          overviewDetails3={item.overviewDetails3}
+          overviewImage={item.overviewImage} />
       </div>
 
       <div ref={photosRef}>
-        <HotelPhotosSection details={item.details} fimage={item.fimage} />
+        <HotelFacilitiesSection
+        facilitiesDetails1={item.facilitiesDetails1}
+        facilitiesDetails2={item.facilitiesDetails2}
+        facilitiesDetails3={item.facilitiesDetails3}
+        // overviewImage={item.overviewImage}
+        />
+      </div>
+
+      <div ref={roomRef}>
+        <HotelRoomSection
+        roomDetails={item.roomDetails}
+        roomImage={item.roomImage}
+        />
       </div>
 
       <div ref={locationRef}>
-        <HotelLocationSection locationImage={item.locationImage} location={item.location} />
+        <HotelLocationSection
+          loactionDetails={item.loactionDetails}
+          planes={item.planes}
+          trains={item.trains}
+          automobiles={item.automobiles}
+          locationImage={item.locationImage}
+          location={item.location}
+          Worthgettingoutofbedfor1={item.Worthgettingoutofbedfor1}
+          Worthgettingoutofbedfor2={item.Worthgettingoutofbedfor2}
+          Worthgettingoutofbedfor3={item.Worthgettingoutofbedfor3}
+          localRestaurants={item.localRestaurants}
+          hotelURL={item.hotelURL}
+          address={item.address}
+        />
+        
       </div>
 
-      <div ref={reviewsRef}>
-        <HotelReviewSection details={item.details} />
-      </div>
 
       <Footer />
     </div>

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import ContactBar from '../components/contact-bar'
 import LogoBar from '../components/logo-bar'
 import HeroSection from '../components/hero-section'
 import { IntroductionSection } from '../components/IntroductionSection'
@@ -12,7 +11,6 @@ const Home = () => {
   }, []);
   return (
     <>
-      <ContactBar />
       <LogoBar />
       <HeroSection />
       <IntroductionSection />
