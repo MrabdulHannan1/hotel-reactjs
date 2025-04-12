@@ -71,7 +71,7 @@ const Hotel = () => {
         facilitiesDetails1={item.facilitiesDetails1}
         facilitiesDetails2={item.facilitiesDetails2}
         facilitiesDetails3={item.facilitiesDetails3}
-        // overviewImage={item.overviewImage}
+        facilitiesImages={item.facilities}
         />
       </div>
 

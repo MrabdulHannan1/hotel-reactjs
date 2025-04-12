@@ -42,6 +42,13 @@ import HotelDadouLocation from '../assets/location-image.png'
 import HotelKepplerLocation from '../assets/location-image.png'
 import HotelVictorHugoKleberLocation from '../assets/location-image.png'
 
+// Facilities Images
+import Facilitie1 from '../assets/facilities-1.png'
+import Facilitie2 from '../assets/facilities-2.png'
+import Facilitie3 from '../assets/facilities-3.png'
+import Facilitie4 from '../assets/facilities-4.png'
+import Facilitie5 from '../assets/facilities-5.png'
+
 export const hotelDetails = [
   {
     id: 1,
@@ -73,6 +80,13 @@ export const hotelDetails = [
       "Swimming Pool",
       "Fibre Internet",
       "Breakfast",
+    ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
     ],
     category: "Luxury",
     price: 75.90,
@@ -112,6 +126,13 @@ export const hotelDetails = [
       "Fibre Internet",
       "Breakfast",
     ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
+    ],
     category: "5 Star",
     price: 75.90,
     banner: HotelPastelBanner,
@@ -149,6 +170,13 @@ export const hotelDetails = [
       "Swimming Pool",
       "Fibre Internet",
       "Breakfast",
+    ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
     ],
     category: "Luxury",
     price: 75.90,
@@ -188,6 +216,13 @@ export const hotelDetails = [
       "Fibre Internet",
       "Breakfast",
     ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
+    ],
     category: "Resorts",
     price: 75.90,
     banner: HotelPadamBanner,
@@ -225,6 +260,13 @@ export const hotelDetails = [
       "Swimming Pool",
       "Fibre Internet",
       "Breakfast",
+    ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
     ],
     category: "Apartments",
     price: 75.90,
@@ -264,6 +306,13 @@ export const hotelDetails = [
       "Fibre Internet",
       "Breakfast",
     ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
+    ],
     category: "Apartments",
     price: 75.90,
     banner: HotelKepplerBanner,
@@ -301,6 +350,13 @@ export const hotelDetails = [
       "Swimming Pool",
       "Fibre Internet",
       "Breakfast",
+    ],
+    facilities: [
+      Facilitie1,
+      Facilitie2,
+      Facilitie3,
+      Facilitie4,
+      Facilitie5,
     ],
     category: "Apartments",
     price: 75.90,
