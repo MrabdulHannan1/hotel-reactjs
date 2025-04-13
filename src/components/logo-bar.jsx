@@ -17,7 +17,9 @@ const LogoBar = () => {
           <div id="google_translate_element" style={{ display: "none" }}></div>
           <div className="flex items-center gap-2">
             <LanguageDropdown />
-            <GoogleTranslate />
+            <div className='hidden'>
+              <GoogleTranslate />
+            </div>
           </div>
         </div>
       </MaxWidthWrapper>
