@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react"
-import { CiGlobe } from "react-icons/ci";
-import { IoChevronDown } from "react-icons/io5";
+import { CiGlobe } from "react-icons/ci"
+import { IoChevronDown } from "react-icons/io5"
 
-// Language options with country flags using emoji
+// Language options with flags
 const languages = [
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "es", name: "Spanish", flag: "🇪🇸" },
@@ -12,7 +12,7 @@ const languages = [
   { code: "pt", name: "Portuguese", flag: "🇵🇹" },
   { code: "ru", name: "Russian", flag: "🇷🇺" },
   { code: "ja", name: "Japanese", flag: "🇯🇵" },
-  { code: "zh", name: "Chinese", flag: "🇨🇳" },
+  { code: "zh-CN", name: "Chinese (Simplified)", flag: "🇨🇳" },
   { code: "ar", name: "Arabic", flag: "🇸🇦" },
 ]
 
@@ -21,9 +21,9 @@ export function LanguageDropdown() {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0])
   const dropdownRef = useRef(null)
 
-  // Handle click outside to close dropdown
+  // Close dropdown when clicking outside
   useEffect(() => {
-    function handleClickOutside(event) {
+    const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false)
       }
@@ -35,35 +35,36 @@ export function LanguageDropdown() {
     }
   }, [])
 
-  const toggleDropdown = () => setIsOpen(!isOpen)
-
+  // Select language and trigger Google Translate
   const selectLanguage = (language) => {
     setSelectedLanguage(language)
     setIsOpen(false)
+
+    const googleCombo = document.querySelector(".goog-te-combo")
+    if (googleCombo) {
+      googleCombo.value = language.code
+      googleCombo.dispatchEvent(new Event("change"))
+    }
   }
 
   return (
     <div className="relative" ref={dropdownRef}>
-      {/* Dropdown trigger button */}
       <button
         className="flex items-center gap-2 bg-transparent px-2 md:px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
-        onClick={toggleDropdown}
-        aria-haspopup="true"
-        aria-expanded={isOpen}
+        onClick={() => setIsOpen(!isOpen)}
       >
         <CiGlobe className="h-4 w-4" />
         <span>{selectedLanguage.name}</span>
         <IoChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
       </button>
 
-      {/* Dropdown menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 origin-top-right bg-white shadow-lg focus:outline-none z-10">
-          <div className="py-1 max-h-50 md:max-h-80 overflow-auto">
+        <div className="absolute right-0 mt-2 w-56 origin-top-right bg-white shadow-lg z-10">
+          <div className="py-1 max-h-60 overflow-auto">
             {languages.map((language) => (
               <button
                 key={language.code}
-                className={`flex w-full items-center gap-2 px-4 py-2 text-sm text-left hover:bg-gray-100 ${
+                className={`flex w-full items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 ${
                   selectedLanguage.code === language.code ? "bg-gray-50 font-medium" : ""
                 }`}
                 onClick={() => selectLanguage(language)}
@@ -92,4 +93,3 @@ export function LanguageDropdown() {
     </div>
   )
 }
-

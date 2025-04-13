@@ -25,3 +25,8 @@ body {
   --color-myGrayText: #5F5F5F;
   --color-myFooterBg: #333239;
 }
+.goog-te-banner-frame.skiptranslate,
+.goog-te-combo,
+body > .goog-te-gadget {
+  display: none !important;
+}
