@@ -46,8 +46,8 @@ const HotelListBody = ({ hotels }) => {
                 <hr className='my-4 border-black' />
                 <div className='flex justify-between'>
                   <div>
-                    <p className='text-lg font-bold text-black'>From</p>
-                    <div className='text-lg font-bold text-black'><span className='text-[#EBBC79] text-2xl'>$ {item.price}</span>  /night</div>
+                    {/* <p className='text-lg font-bold text-black'>From</p> */}
+                    {/* <div className='text-lg font-bold text-black'><span className='text-[#EBBC79] text-2xl'>$ {item.price}</span>  /night</div> */}
                   </div>
                   <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 px-6 mt-4'>
                     <p className='text-lg font-bold text-white'>SEE DETAILS</p>
