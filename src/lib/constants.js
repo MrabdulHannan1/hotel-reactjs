@@ -54,8 +54,8 @@ export const hotelDetails = [
     id: 1,
     hotelName: "Monsieur Georges",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "17 rue Washington 75008 Paris",
+    address: "17 rue Washington 75008 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -72,7 +72,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://monsieurgeorge.com/",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -94,14 +94,14 @@ export const hotelDetails = [
     overviewImage: MonsieurGeorgesOverview,
     roomImage: MonsieurGeorgesRoom,
     locationImage: MonsieurGeorgesLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/17+Rue+Washington,+75008+Paris,+France/@48.8731301,2.3024321,19.33z/data=!4m6!3m5!1s0x47e66fc1ec4e3729:0xe6b164a2d37bcfe3!8m2!3d48.8730276!4d2.3025216!16s%2Fg%2F11c43v7pb8?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 2,
     hotelName: "Hotel Pastel",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "79 rue Lauriston 75116 Paris",
+    address: "79 rue Lauriston 75116 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -118,7 +118,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://hotelpastelparis.com",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -140,14 +140,14 @@ export const hotelDetails = [
     overviewImage: HotelPastelOverview,
     roomImage: HotelPastelRoom,
     locationImage: HotelPastelLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/79+Rue+Lauriston,+75116+Paris,+France/@48.8683918,2.2891492,19.87z/data=!4m15!1m8!3m7!1s0x47e66ff01dd67683:0x2ca49de2437f6d0a!2s79+Rue+Lauriston,+75116+Paris,+France!3b1!8m2!3d48.8683541!4d2.2891284!16s%2Fg%2F11cnd94djf!3m5!1s0x47e66ff01dd67683:0x2ca49de2437f6d0a!8m2!3d48.8683541!4d2.2891284!16s%2Fg%2F11cnd94djf?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 3,
     hotelName: "La Demeure Montaigne",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "18, rue Clément Marot 75008 Paris",
+    address: "18, rue Clément Marot 75008 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -164,7 +164,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://www.lademeuremontaigne.com",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -186,14 +186,14 @@ export const hotelDetails = [
     overviewImage: LaDemeureMontaigneOverview,
     roomImage: LaDemeureMontaigneRoom,
     locationImage: LaDemeureMontaigneLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/18+Rue+Cl%C3%A9ment+Marot,+75008+Paris,+France/@48.8679734,2.303199,19.33z/data=!4m6!3m5!1s0x47e66fc327c53bdd:0x8716c83a89f0908a!8m2!3d48.8678483!4d2.3033176!16s%2Fg%2F11bw3y_fzl?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 4,
     hotelName: "Hotel Padam",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "9 rue Jean-Giraudoux 75016 Paris",
+    address: "9 rue Jean-Giraudoux 75016 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -210,7 +210,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://www.padam-hotel.com",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -232,14 +232,14 @@ export const hotelDetails = [
     overviewImage: HotelPadamOverview,
     roomImage: HotelPadamRoom,
     locationImage: HotelPadamLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/9+Rue+Jean+Giraudoux,+75116+Paris,+France/@48.8686542,2.2979819,21z/data=!4m6!3m5!1s0x47e66fe85f01688d:0xdca6da21d8d476bc!8m2!3d48.8686672!4d2.2978713!16s%2Fg%2F11bw41711c?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 5,
     hotelName: "Hotel Dadou",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "10 rue Troyon - 75017 Paris",
+    address: "10 rue Troyon - 75017 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -256,7 +256,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://www.dadou.paris/",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -278,14 +278,14 @@ export const hotelDetails = [
     overviewImage: HotelDadouOverview,
     roomImage: HotelDadouRoom,
     locationImage: HotelDadouLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/10+Rue+Troyon,+75017+Paris,+France/@48.8758287,2.2958616,21z/data=!4m6!3m5!1s0x47e66feb605c0ac9:0xeb3bbc232a500a7d!8m2!3d48.8760005!4d2.2956705!16s%2Fg%2F11bw43357t?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 6,
     hotelName: "Hotel Keppler",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "10 rue Keppler 75116 Paris",
+    address: "10 rue Keppler 75116 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -302,7 +302,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://www.keppler.fr",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -324,14 +324,14 @@ export const hotelDetails = [
     overviewImage: HotelKepplerOverview,
     roomImage: HotelKepplerRoom,
     locationImage: HotelKepplerLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/10+Rue+Kepler,+75116+Paris,+France/@48.869858,2.2971227,21z/data=!4m6!3m5!1s0x47e66fe9024b8bc5:0x5ba86a3e64e3bc91!8m2!3d48.869897!4d2.2973565!16s%2Fg%2F11c3q3p76s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 7,
     hotelName: "Hotel Victor Hugo Kleber",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-    location: "45B hali road Hujk Lorem ipsum",
-    address: "The Chow Kit 1012, Jalan Sultan Ismail, Chow Kit, Wilayah Persekutuan Kuala Lumpur 50100 Malaysia",
+    location: "19, rue Copernic 75116 Paris",
+    address: "19, rue Copernic 75116 Paris",
     details: "All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel. All our Deluxe rooms have big windows to help you take a broad view of the cityscape and nature. We offer bigger bed and every bathroom has bathtub and shower, which brings relaxation to you after a long day. Fast WIFI connection, satelite TV and international standard electric socket are standard throughout Hotel.",
     overviewDetails1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
     overviewDetails2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
@@ -348,7 +348,7 @@ export const hotelDetails = [
     Worthgettingoutofbedfor2: "Wander through historic Loke Mansion or take a guided walking tour of nearby Chow Kit Market, Kuala Lumpur’s biggest, and get the inside scoop on the sprawling mass of stalls that sell everything from fresh produce and fish to DVDs of questionable origin.",
     Worthgettingoutofbedfor3: "In the mood for a little retail therapy? Make your way to Bukit Bintang, also known as Starhill, and treasure hunt through the district’s bijoux boutiques and sizeable shopping centres, stop for snacks at the hawker-style eateries and get your caffeine fix at one of the many alfresco cafés. If you’re inspired by Malaysian design, spruce up your own space with handcrafted furniture from ",
     localRestaurants: "Wake up with a jolt of rich coffee and a fluffy baked treat at nearby Common Grind before starting your day's city adventures. Stop for lunch Kin Kin Chilli Pan Mee Shop — made famous by Momofuku's David Chang - and order bowls of spicy noodles. If it's a steak and carbs kind of night, look no further than Marble 8 Steak House for the city's finest cuts of Wagyu and Angus.",
-    hotelURL: "www.hotelwebsite.com",
+    hotelURL: "https://victorhugohotel.com",
     hotelTags: [
       "Pick Up & Drop",
       "Parking Space",
@@ -370,6 +370,6 @@ export const hotelDetails = [
     overviewImage: HotelVictorHugoKleberOverview,
     roomImage: HotelVictorHugoKleberRoom,
     locationImage: HotelVictorHugoKleberLocation,
-    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/place/19+Rue+Copernic,+75116+Paris,+France/@48.8693169,2.2885809,20.33z/data=!4m6!3m5!1s0x47e66ff02718f9eb:0xb78188fee5c964fb!8m2!3d48.8691545!4d2.2892091!16s%2Fg%2F11csf44_z9?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
 ]
