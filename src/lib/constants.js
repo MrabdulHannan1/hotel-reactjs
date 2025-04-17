@@ -93,7 +93,8 @@ export const hotelDetails = [
     banner: MonsieurGeorgesBanner,
     overviewImage: MonsieurGeorgesOverview,
     roomImage: MonsieurGeorgesRoom,
-    locationImage: MonsieurGeorgesLocation
+    locationImage: MonsieurGeorgesLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 2,
@@ -138,7 +139,8 @@ export const hotelDetails = [
     banner: HotelPastelBanner,
     overviewImage: HotelPastelOverview,
     roomImage: HotelPastelRoom,
-    locationImage: HotelPastelLocation
+    locationImage: HotelPastelLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 3,
@@ -183,7 +185,8 @@ export const hotelDetails = [
     banner: LaDemeureMontaigneBanner,
     overviewImage: LaDemeureMontaigneOverview,
     roomImage: LaDemeureMontaigneRoom,
-    locationImage: LaDemeureMontaigneLocation
+    locationImage: LaDemeureMontaigneLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 4,
@@ -228,7 +231,8 @@ export const hotelDetails = [
     banner: HotelPadamBanner,
     overviewImage: HotelPadamOverview,
     roomImage: HotelPadamRoom,
-    locationImage: HotelPadamLocation
+    locationImage: HotelPadamLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 5,
@@ -273,7 +277,8 @@ export const hotelDetails = [
     banner: HotelDadouBanner,
     overviewImage: HotelDadouOverview,
     roomImage: HotelDadouRoom,
-    locationImage: HotelDadouLocation
+    locationImage: HotelDadouLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 6,
@@ -318,7 +323,8 @@ export const hotelDetails = [
     banner: HotelKepplerBanner,
     overviewImage: HotelKepplerOverview,
     roomImage: HotelKepplerRoom,
-    locationImage: HotelKepplerLocation
+    locationImage: HotelKepplerLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
     id: 7,
@@ -363,6 +369,7 @@ export const hotelDetails = [
     banner: HotelVictorHugoKleberBanner,
     overviewImage: HotelVictorHugoKleberOverview,
     roomImage: HotelVictorHugoKleberRoom,
-    locationImage: HotelVictorHugoKleberLocation
+    locationImage: HotelVictorHugoKleberLocation,
+    addressURL: "https://www.google.com/maps/place/Pearl+Continental+Hotel,+Lahore/@31.5525879,74.3362683,16.58z/data=!4m20!1m10!3m9!1s0x391904c8606da7e9:0xd70a28b88f7720d7!2sPearl+Continental+Hotel,+Lahore!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s!3m8!1s0x391904c8606da7e9:0xd70a28b88f7720d7!5m2!4m1!1i2!8m2!3d31.5528818!4d74.3386959!16s%2Fg%2F11b6syng_s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
 ]

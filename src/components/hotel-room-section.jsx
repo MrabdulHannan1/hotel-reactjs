@@ -1,7 +1,7 @@
 import React from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 
-const HotelRoomSection = ({roomDetails, roomImage}) => {
+const HotelRoomSection = ({ roomDetails, roomImage }) => {
   return (
     <section id='overview' className='my-10'>
       <MaxWidthWrapper>
@@ -20,9 +20,11 @@ const HotelRoomSection = ({roomDetails, roomImage}) => {
       <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
         <img src={roomImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
         <div className='bg-black/70 absolute bottom-0 left-0 right-0'>
-          <p className='text-white text-2xl font-semibold text-center tracking-[7.02px] leading-normal py-2'>
-            Room
-          </p>
+          <MaxWidthWrapper>
+            <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
+              Room
+            </p>
+          </MaxWidthWrapper>
         </div>
       </div>
     </section>

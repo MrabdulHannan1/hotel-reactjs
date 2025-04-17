@@ -2,7 +2,7 @@ import React from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 import MapImage from '../assets/map-iamge.png'
 
-const HotelLocationSection = ({loactionDetails, planes, trains, automobiles, locationImage, location, Worthgettingoutofbedfor1, Worthgettingoutofbedfor2, Worthgettingoutofbedfor3, localRestaurants, hotelURL, address}) => {
+const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, locationImage, location, Worthgettingoutofbedfor1, Worthgettingoutofbedfor2, Worthgettingoutofbedfor3, localRestaurants, hotelURL, address, addressURL }) => {
   return (
     <section id='location' className='my-10'>
       <MaxWidthWrapper>
@@ -52,52 +52,54 @@ const HotelLocationSection = ({loactionDetails, planes, trains, automobiles, loc
               </p>
               <img src={MapImage} alt='map' className='object-cover w-full aspect-square mt-4' />
             </div>
-            <button className='bg-myBlue gap-2 px-6 py-4 mt-4 w-full'>
+            <a href={addressURL} target="_blank" rel="noopener noreferrer" className='bg-myBlue gap-2 px-6 py-4 mt-4 w-full cursor-pointer block text-center'>
               <p className='text-lg font-bold text-white'>view map</p>
-            </button>
+            </a>
           </div>
         </div>
       </MaxWidthWrapper>
       <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
         <img src={locationImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
         <div className='bg-black/70 absolute bottom-0 left-0 right-0'>
-          <p className='text-white text-2xl font-semibold text-center tracking-[7.02px] leading-normal py-2'>
-            Location
-          </p>
+          <MaxWidthWrapper>
+            <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
+              Location
+            </p>
+          </MaxWidthWrapper>
         </div>
       </div>
       <MaxWidthWrapper>
         <div>
           <div className='mt-10'>
-          <h5 className="text-xl md:text-2xl font-semibold text-black leading-[26px]">
-            Worth getting out of bed for
-          </h5>
-          <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
-            {Worthgettingoutofbedfor1}
-          </p>
-          <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
-            {Worthgettingoutofbedfor2}
-          </p>
-          <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
-            {Worthgettingoutofbedfor3}
-          </p>
-        </div>
-        <div className='mt-10'>
-          <h5 className="text-xl md:text-2xl font-semibold text-black leading-[26px]">
-            Local restaurants
-          </h5>
-          <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
-            {localRestaurants}
-          </p>
-        </div>
-        <div className='mt-10'>
-          <h5 className="text-xl md:text-2xl font-semibold text-black leading-[26px] mb-4">
-            For more details you can visit:
-          </h5>
+            <h5 className="text-xl md:text-2xl font-semibold text-black leading-[26px]">
+              Worth getting out of bed for
+            </h5>
+            <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
+              {Worthgettingoutofbedfor1}
+            </p>
+            <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
+              {Worthgettingoutofbedfor2}
+            </p>
+            <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
+              {Worthgettingoutofbedfor3}
+            </p>
+          </div>
+          <div className='mt-10'>
+            <h5 className="text-xl md:text-2xl font-semibold text-black leading-[26px]">
+              Local restaurants
+            </h5>
+            <p className="text-base md:text-lg text-black font-normal leading-[26px] mt-2">
+              {localRestaurants}
+            </p>
+          </div>
+          <div className='mt-10'>
+            <h5 className="text-xl md:text-2xl font-semibold text-black leading-[26px] mb-4">
+              For more details you can visit:
+            </h5>
             <a href={hotelURL} target='_blank' className="text-lg md:text-2xl text-myBlue leading-[26px] font-bold underline">
-            {hotelURL}
-          </a>
-        </div>
+              {hotelURL}
+            </a>
+          </div>
         </div>
       </MaxWidthWrapper>
     </section>

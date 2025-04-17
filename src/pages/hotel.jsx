@@ -50,7 +50,7 @@ const Hotel = () => {
         <MaxWidthWrapper>
           <div className='grid grid-cols-4 py-4'>
             <button onClick={() => scrollToSection(overviewRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Overview</button>
-            <button onClick={() => scrollToSection(photosRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Photos</button>
+            <button onClick={() => scrollToSection(photosRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Facilities</button>
             <button onClick={() => scrollToSection(roomRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Room</button>
             <button onClick={() => scrollToSection(locationRef)} className='text-white font-semibold text-lg uppercase text-center tracking-[5.02px] leading-normal cursor-pointer'>Location</button>
           </div>
@@ -96,6 +96,7 @@ const Hotel = () => {
           localRestaurants={item.localRestaurants}
           hotelURL={item.hotelURL}
           address={item.address}
+          addressURL={item.addressURL}
         />
         
       </div>
