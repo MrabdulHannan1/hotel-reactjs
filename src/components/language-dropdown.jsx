@@ -5,16 +5,20 @@ import { IoChevronDown } from "react-icons/io5"
 // Language options with flags
 const languages = [
   { code: "en", name: "English", flag: "🇬🇧" },
-  { code: "es", name: "Spanish", flag: "🇪🇸" },
   { code: "fr", name: "French", flag: "🇫🇷" },
-  { code: "de", name: "German", flag: "🇩🇪" },
-  { code: "it", name: "Italian", flag: "🇮🇹" },
-  { code: "pt", name: "Portuguese", flag: "🇵🇹" },
-  { code: "ru", name: "Russian", flag: "🇷🇺" },
-  { code: "ja", name: "Japanese", flag: "🇯🇵" },
-  { code: "zh-CN", name: "Chinese (Simplified)", flag: "🇨🇳" },
-  { code: "ar", name: "Arabic", flag: "🇸🇦" },
 ]
+// const languages = [
+//   { code: "en", name: "English", flag: "🇬🇧" },
+//   { code: "es", name: "Spanish", flag: "🇪🇸" },
+//   { code: "fr", name: "French", flag: "🇫🇷" },
+//   { code: "de", name: "German", flag: "🇩🇪" },
+//   { code: "it", name: "Italian", flag: "🇮🇹" },
+//   { code: "pt", name: "Portuguese", flag: "🇵🇹" },
+//   { code: "ru", name: "Russian", flag: "🇷🇺" },
+//   { code: "ja", name: "Japanese", flag: "🇯🇵" },
+//   { code: "zh-CN", name: "Chinese (Simplified)", flag: "🇨🇳" },
+//   { code: "ar", name: "Arabic", flag: "🇸🇦" },
+// ]
 
 export function LanguageDropdown() {
   const [isOpen, setIsOpen] = useState(false)

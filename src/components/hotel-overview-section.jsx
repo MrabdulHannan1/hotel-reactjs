@@ -1,7 +1,29 @@
-import React from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
+import React, { useRef } from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
+import Slider from 'react-slick';
 
-const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDetails3, overviewImage }) => {
+const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDetails3, overviewImage, facilitiesImages }) => {
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+  const settings = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+  };
   return (
     <section id='overview' className='my-10'>
       <MaxWidthWrapper>
@@ -17,15 +39,31 @@ const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDeta
           </p>
         </div>
       </MaxWidthWrapper>
-      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
-        <img src={overviewImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
-        <div className='bg-black/80 absolute bottom-0 left-0 right-0'>
-          <MaxWidthWrapper>
-            <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
-              Facilities
-            </p>
-          </MaxWidthWrapper>
+      <div className='w-full h-100 md:h-140 lg:h-160 mt-10 relative overflow-hidden'>
+        <Slider ref={slider => { sliderRef = slider; }} {...settings}>
+          {
+            facilitiesImages.map((item) => (
+              <div key={item.id} className="">
+                <img src={item} className="w-full h-full object-contain" alt='image' />
+              </div>
+            ))
+          }
+        </Slider>
+        <div className='absolute inset-0 w-full flex justify-between items-center px-10'>
+          <button onClick={previous} className="bg-white/90 p-2 rounded-full cursor-pointer">
+            <FaAngleLeft className="size-6" />
+          </button>
+          <button onClick={next} className="bg-white/90 p-2 rounded-full cursor-pointer">
+            <FaAngleRight className="size-6" />
+          </button>
         </div>
+      </div>
+      <div className='bg-black/80'>
+        <MaxWidthWrapper>
+          <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
+            Facilities
+          </p>
+        </MaxWidthWrapper>
       </div>
       <MaxWidthWrapper>
         <div>

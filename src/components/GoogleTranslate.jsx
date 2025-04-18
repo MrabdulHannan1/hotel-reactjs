@@ -74,7 +74,8 @@ const GoogleTranslate = () => {
             { 
               pageLanguage: 'en',
               autoDisplay: false,
-              includedLanguages: 'ar,zh-CN,fr,de,hi,id,it,ja,ko,pt,ru,es,th,tr,vi,en',
+              includedLanguages: 'fr,en',
+              // includedLanguages: 'ar,zh-CN,fr,de,hi,id,it,ja,ko,pt,ru,es,th,tr,vi,en',
               layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
             },
             'google_translate_element'
