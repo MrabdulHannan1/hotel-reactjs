@@ -31,7 +31,7 @@ const HotelListBody = ({ hotels }) => {
                     <span className='text-lg font-bold text-black'>Location:</span> {" "}
                     <span className='text-lg text-myGrayText'>{item.location}</span>
                   </div>
-                  <a href='#' className='text-lg text-myBlue font-semibold underline underline-offset-2'>
+                  <a href={item.addressURL} target="_blank" rel="noopener noreferrer" className='text-lg text-myBlue font-semibold underline underline-offset-2'>
                     View Map
                   </a>
                 </div>
@@ -61,7 +61,7 @@ const HotelListBody = ({ hotels }) => {
             <div className='lg:hidden rounded-2xl overflow-hidden'>
               {/* Hotel Image */}
               <div>
-                <img src={item.image} alt='hotelImage' className='object-cover w-full h-60' />
+                <img src={item.banner} alt='hotelImage' className='object-cover w-full h-60' />
               </div>
               {/* Hotel Details */}
               <div className={`bg-white p-4 md:p-6 flex flex-col justify-center ${item.id % 2 === 0 ? '-order-1' : ''} `}>
@@ -73,7 +73,7 @@ const HotelListBody = ({ hotels }) => {
                     <span className='text-base md:text-lg font-bold text-black'>Location:</span> {" "}
                     <span className='text-base md:text-lg text-myGrayText'>{item.location}</span>
                   </div>
-                  <a href='#' className='text-base md:text-lg text-myBlue font-semibold underline underline-offset-2'>
+                  <a href={item.addressURL} target="_blank" rel="noopener noreferrer" className='text-base md:text-lg text-myBlue font-semibold underline underline-offset-2'>
                     View Map
                   </a>
                 </div>
