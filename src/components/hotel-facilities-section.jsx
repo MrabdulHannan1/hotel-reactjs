@@ -53,9 +53,9 @@ const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facili
     <section id='overview' className='my-10'>
       <MaxWidthWrapper>
         <div>
-          <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+          {/* <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
             Facilities
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-bold text-black md:leading-[49px]">
             Welcome to the best five-star hotels
           </h2>

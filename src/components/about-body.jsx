@@ -62,9 +62,9 @@ const AboutBody = () => {
       </section>
 
       {/* Iamge Section */}
-      <section>
+      {/* <section>
         <img src={AboutImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='about-hero-Image' />
-      </section>
+      </section> */}
     </div>
   )
 }

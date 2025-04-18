@@ -6,9 +6,9 @@ const HotelRoomSection = ({ roomDetails, roomImage }) => {
     <section id='overview' className='my-10'>
       <MaxWidthWrapper>
         <div>
-          <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+          {/* <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
             Rooms
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-bold text-black md:leading-[49px]">
             Best Hotel with Best Rooms
           </h2>

@@ -6,9 +6,9 @@ const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDeta
     <section id='overview' className='my-10'>
       <MaxWidthWrapper>
         <div>
-          <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+          {/* <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
             Overview
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-bold text-black md:leading-[49px]">
             Laid-back places for kindred spirits
           </h2>
@@ -22,7 +22,7 @@ const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDeta
         <div className='bg-black/80 absolute bottom-0 left-0 right-0'>
           <MaxWidthWrapper>
             <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
-              Overview
+              Facilities
             </p>
           </MaxWidthWrapper>
         </div>
