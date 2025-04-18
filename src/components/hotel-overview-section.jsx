@@ -39,42 +39,6 @@ const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDeta
           </p>
         </div>
       </MaxWidthWrapper>
-      <div className='w-full h-100 md:h-140 lg:h-160 mt-10 relative overflow-hidden'>
-        <Slider ref={slider => { sliderRef = slider; }} {...settings}>
-          {
-            slider.map((item) => (
-              <div key={item.id} className="w-full h-full">
-                <img src={item} className="w-full h-full object-cover" alt='image' />
-              </div>
-            ))
-          }
-        </Slider>
-        <div className='absolute inset-0 w-full flex justify-between items-center px-4 md:px-10'>
-          <button onClick={previous} className="bg-white/90 p-2 rounded-full cursor-pointer">
-            <FaAngleLeft className="size-6" />
-          </button>
-          <button onClick={next} className="bg-white/90 p-2 rounded-full cursor-pointer">
-            <FaAngleRight className="size-6" />
-          </button>
-        </div>
-      </div>
-      <div className='bg-black/80'>
-        <MaxWidthWrapper>
-          <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
-            Facilities
-          </p>
-        </MaxWidthWrapper>
-      </div>
-      <MaxWidthWrapper>
-        <div>
-          <p className="text-base md:text-xl text-black font-normal leading-[26px] mt-6">
-            {overviewDetails2}
-          </p>
-          <p className="text-base md:text-xl text-black font-normal leading-[26px] mt-6">
-            {overviewDetails3}
-          </p>
-        </div>
-      </MaxWidthWrapper>
     </section>
   )
 }

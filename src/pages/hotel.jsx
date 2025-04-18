@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router';
 import LogoBar from '../components/logo-bar';
 import HotelHeroSection from '../components/hotel-hero-section';
@@ -14,6 +14,7 @@ import HotelRoomSection from '../components/hotel-room-section';
 const Hotel = () => {
   const location = useLocation();
   const { item } = location.state || {};
+  const [activeSection, setActiveSection] = useState('overview');
   
   if (!item) {
     return <p>No hotel data available.</p>;
@@ -31,8 +32,9 @@ const Hotel = () => {
   const locationRef = useRef(null);
 
   // Function to handle smooth scrolling
-  const scrollToSection = (ref) => {
+  const scrollToSection = (ref, section) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
+    setActiveSection(section);
   };
 
   return (
@@ -49,10 +51,38 @@ const Hotel = () => {
       <section className='bg-myFooterBg hidden md:block'>
         <MaxWidthWrapper>
           <div className='grid grid-cols-4 py-4'>
-            <button onClick={() => scrollToSection(overviewRef)} className='text-white text-start font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer'>Overview</button>
-            <button onClick={() => scrollToSection(photosRef)} className='text-white text-start font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer'>Facilities</button>
-            <button onClick={() => scrollToSection(roomRef)} className='text-white text-start font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer'>Room</button>
-            <button onClick={() => scrollToSection(locationRef)} className='text-white text-start font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer'>Location</button>
+            <button 
+              onClick={() => scrollToSection(overviewRef, 'overview')} 
+              className={`text-center font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer ${
+                activeSection === 'overview' ? 'text-blue-500' : 'text-white'
+              }`}
+            >
+              Overview
+            </button>
+            <button 
+              onClick={() => scrollToSection(photosRef, 'facilities')} 
+              className={`text-center font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer ${
+                activeSection === 'facilities' ? 'text-blue-500' : 'text-white'
+              }`}
+            >
+              Facilities
+            </button>
+            <button 
+              onClick={() => scrollToSection(roomRef, 'room')} 
+              className={`text-center font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer ${
+                activeSection === 'room' ? 'text-blue-500' : 'text-white'
+              }`}
+            >
+              Room
+            </button>
+            <button 
+              onClick={() => scrollToSection(locationRef, 'location')} 
+              className={`text-center font-semibold text-lg uppercase tracking-[5.02px] leading-normal cursor-pointer ${
+                activeSection === 'location' ? 'text-blue-500' : 'text-white'
+              }`}
+            >
+              Location
+            </button>
           </div>
         </MaxWidthWrapper>
       </section>
@@ -72,7 +102,10 @@ const Hotel = () => {
         facilitiesDetails1={item.facilitiesDetails1}
         facilitiesDetails2={item.facilitiesDetails2}
         facilitiesDetails3={item.facilitiesDetails3}
+        overviewDetails2={item.overviewDetails2}
+        overviewDetails3={item.overviewDetails3}
         facilitiesImages={item.facilities}
+        slider={item.slider}
         />
       </div>
 
@@ -80,6 +113,11 @@ const Hotel = () => {
         <HotelRoomSection
         roomDetails={item.roomDetails}
         roomImage={item.roomImage}
+        facilitiesDetails1={item.facilitiesDetails1}
+        facilitiesDetails2={item.facilitiesDetails2}
+        facilitiesDetails3={item.facilitiesDetails3}
+        facilitiesImages={item.facilities}
+        slider={item.slider}
         />
       </div>
 

@@ -5,12 +5,22 @@ import MapImage from '../assets/map-iamge.png'
 const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, locationImage, location, Worthgettingoutofbedfor1, Worthgettingoutofbedfor2, Worthgettingoutofbedfor3, localRestaurants, hotelURL, address, addressURL }) => {
   return (
     <section id='location' className='my-10'>
-      <MaxWidthWrapper>
-        <div className='md:flex flex-row gap-10'>
-          <div className='w-full md:w-[70%] lg:w-[80%]'>
-            <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
+        <img src={locationImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
+        <div className='bg-black/70 absolute bottom-0 left-0 right-0'>
+          <MaxWidthWrapper>
+            <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
               Location
-            </div>
+            </p>
+          </MaxWidthWrapper>
+        </div>
+      </div>
+      <MaxWidthWrapper>
+        <div className='md:flex flex-row gap-10 mt-10'>
+          <div className='w-full md:w-[70%] lg:w-[80%]'>
+            {/*<div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+              Location
+            </div>*/}
             <h2 className="text-3xl md:text-4xl font-bold text-black md:leading-[49px]">
               Laid-back places for kindred spirits
             </h2>
@@ -58,16 +68,6 @@ const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, lo
           </div>
         </div>
       </MaxWidthWrapper>
-      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
-        <img src={locationImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
-        <div className='bg-black/70 absolute bottom-0 left-0 right-0'>
-          <MaxWidthWrapper>
-            <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
-              Location
-            </p>
-          </MaxWidthWrapper>
-        </div>
-      </div>
       <MaxWidthWrapper>
         <div>
           <div className='mt-10'>

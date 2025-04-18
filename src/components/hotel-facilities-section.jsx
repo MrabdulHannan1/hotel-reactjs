@@ -3,9 +3,10 @@ import MaxWidthWrapper from './max-width-wrapper'
 import Slider from "react-slick"
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6"
 import Marquee from 'react-fast-marquee'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facilitiesDetails3, facilitiesImages }) => {
-  
+const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facilitiesDetails3, facilitiesImages, slider, overviewDetails2, overviewDetails3 }) => {
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -13,84 +14,57 @@ const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facili
   const previous = () => {
     sliderRef.slickPrev();
   };
-
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 1000,
-    slidesToShow: 3,
+    speed: 2000,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
   };
-
   return (
     <section id='overview' className='my-10'>
-      <MaxWidthWrapper>
-        <div>
-          {/* <div className="text-xl md:text-2xl text-myBlue font-medium leading-6">
+      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative overflow-hidden'>
+        <Slider ref={slider => { sliderRef = slider; }} {...settings}>
+          {
+            slider.map((item) => (
+              <div key={item.id} className="w-full h-full">
+                <img src={item} className="w-full h-full object-cover" alt='image' />
+              </div>
+            ))
+          }
+        </Slider>
+        <div className='absolute inset-0 w-full flex justify-between items-center px-4 md:px-10'>
+          <button onClick={previous} className="bg-white/90 p-2 rounded-full cursor-pointer">
+            <FaAngleLeft className="size-6" />
+          </button>
+          <button onClick={next} className="bg-white/90 p-2 rounded-full cursor-pointer">
+            <FaAngleRight className="size-6" />
+          </button>
+        </div>
+      </div>
+      <div className='bg-black/80'>
+        <MaxWidthWrapper>
+          <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
             Facilities
-          </div> */}
+          </p>
+        </MaxWidthWrapper>
+      </div>
+      <MaxWidthWrapper>
+        <div className="mt-10">
           <h2 className="text-3xl md:text-4xl font-bold text-black md:leading-[49px]">
-            Welcome to the best five-star hotels
+            Lorem Ipsum dolor sit amet...
           </h2>
           <p className="text-base md:text-xl text-black font-normal leading-[26px] mt-6">
-            {facilitiesDetails1}
+            {overviewDetails2}
+          </p>
+          <p className="text-base md:text-xl text-black font-normal leading-[26px] mt-6">
+            {overviewDetails3}
           </p>
         </div>
-
-        {/*<div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
-        <img src={overviewImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
-      </div>*/}
-        <div className='w-full'>
-          <Marquee autoFill pauseOnHover>
-            {
-              Array.isArray(facilitiesImages) && facilitiesImages.length > 0 ? (
-                facilitiesImages.map((item, index) => (
-                    <div key={index} className='p-4'>
-                      <img src={item} className='w-100 h-100 md:h-120 lg:h-140 object-cover cursor-pointer hover:scale-105 duration-500' alt={`Facility ${index + 1}`} />
-                    </div>
-                ))
-              ) : (
-                <div>No facilities available</div>
-              )
-            }
-            </Marquee>
-        </div>
-
-        <div>
-        <p className="text-base md:text-xl text-black font-normal leading-[26px] mt-6">
-          {facilitiesDetails2}
-        </p>
-        <p className="text-base md:text-xl text-black font-normal leading-[26px] mt-6">
-          {facilitiesDetails3}
-        </p>
-      </div>
       </MaxWidthWrapper>
     </section>
   )

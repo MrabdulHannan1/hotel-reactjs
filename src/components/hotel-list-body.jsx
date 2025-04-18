@@ -1,7 +1,7 @@
 import React from 'react'
 import { hotelDetails } from '../lib/constants'
 import { FaArrowRight } from "react-icons/fa6";
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const HotelListBody = ({ hotels }) => {
   const navigate = useNavigate();
@@ -18,9 +18,9 @@ const HotelListBody = ({ hotels }) => {
             {/* Desktop */}
             <div className='hidden lg:grid grid-cols-2 h-120  overflow-hidden'>
               {/* Hotel Image */}
-              <div>
+              <button className='cursor-pointer w-full h-120' onClick={() => handleSeeDetails(item)}>
                 <img src={item.banner} alt='hotelImage' className='object-cover w-full h-120' />
-              </div>
+              </button>
               {/* Hotel Details */}
               <div className={`bg-white px-6 xl:px-14 flex flex-col justify-center ${item.id % 2 === 0 ? '-order-1' : ''} `}>
                 <h1 className='text-4xl font-bold text-black'>
@@ -60,9 +60,9 @@ const HotelListBody = ({ hotels }) => {
             {/* Mobile */}
             <div className='lg:hidden rounded-2xl overflow-hidden'>
               {/* Hotel Image */}
-              <div>
+              <button className='cursor-pointer w-full' onClick={() => handleSeeDetails(item)}>
                 <img src={item.banner} alt='hotelImage' className='object-cover w-full h-60' />
-              </div>
+              </button>
               {/* Hotel Details */}
               <div className={`bg-white p-4 md:p-6 flex flex-col justify-center ${item.id % 2 === 0 ? '-order-1' : ''} `}>
                 <h1 className='text-2xl md:text-4xl font-bold text-black'>
