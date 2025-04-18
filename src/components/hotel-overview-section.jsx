@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 import Slider from 'react-slick';
 
-const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDetails3, overviewImage, facilitiesImages }) => {
+const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDetails3, overviewImage, slider }) => {
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -42,14 +42,14 @@ const HotelOverviewSection = ({ overviewDetails1, overviewDetails2, overviewDeta
       <div className='w-full h-100 md:h-140 lg:h-160 mt-10 relative overflow-hidden'>
         <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {
-            facilitiesImages.map((item) => (
-              <div key={item.id} className="">
-                <img src={item} className="w-full h-full object-contain" alt='image' />
+            slider.map((item) => (
+              <div key={item.id} className="w-full h-full">
+                <img src={item} className="w-full h-full object-cover" alt='image' />
               </div>
             ))
           }
         </Slider>
-        <div className='absolute inset-0 w-full flex justify-between items-center px-10'>
+        <div className='absolute inset-0 w-full flex justify-between items-center px-4 md:px-10'>
           <button onClick={previous} className="bg-white/90 p-2 rounded-full cursor-pointer">
             <FaAngleLeft className="size-6" />
           </button>

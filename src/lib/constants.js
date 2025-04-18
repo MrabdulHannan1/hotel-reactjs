@@ -10,7 +10,7 @@ export const hotelCategories = [
 import MonsieurGeorgesBanner from '../assets/monsieur-georges-banner.png';
 import HotelPastelBanner from '../assets//hotel-pastel-banner.png';
 import LaDemeureMontaigneBanner from '../assets/la-demeure-montaigne-banner.png';
-import HotelPadamBanner  from '../assets/hotel-padam-banner.png';
+import HotelPadamBanner from '../assets/hotel-padam-banner.png';
 import HotelDadouBanner from '../assets/hotel-dadou-banner.png';
 import HotelKepplerBanner from '../assets/hotel-keppler-banner.png';
 import HotelVictorHugoKleberBanner from '../assets/hotel-victor-hugo-kleber-banner.png';
@@ -48,6 +48,7 @@ import Facilitie2 from '../assets/facilities-2.png'
 import Facilitie3 from '../assets/facilities-3.png'
 import Facilitie4 from '../assets/facilities-4.png'
 import Facilitie5 from '../assets/facilities-5.png'
+import { HotelDadou1, HotelDadou10, HotelDadou11, HotelDadou12, HotelDadou13, HotelDadou14, HotelDadou15, HotelDadou16, HotelDadou2, HotelDadou3, HotelDadou4, HotelDadou5, HotelDadou6, HotelDadou7, HotelDadou8, HotelDadou9, HotelKeppler1, HotelKeppler10, HotelKeppler11, HotelKeppler12, HotelKeppler13, HotelKeppler14, HotelKeppler15, HotelKeppler16, HotelKeppler17, HotelKeppler18, HotelKeppler19, HotelKeppler2, HotelKeppler20, HotelKeppler21, HotelKeppler22, HotelKeppler23, HotelKeppler24, HotelKeppler3, HotelKeppler4, HotelKeppler5, HotelKeppler6, HotelKeppler7, HotelKeppler8, HotelKeppler9, HotelPadam1, HotelPadam2, HotelPadam3, HotelPadam4, HotelPadam5, HotelPadam6, HotelPadam7, HotelPadam8, HotelPastel1, HotelPastel10, HotelPastel11, HotelPastel2, HotelPastel3, HotelPastel4, HotelPastel5, HotelPastel6, HotelPastel7, HotelPastel8, HotelPastel9, HotelVictorHugoKleber1, HotelVictorHugoKleber10, HotelVictorHugoKleber11, HotelVictorHugoKleber12, HotelVictorHugoKleber13, HotelVictorHugoKleber14, HotelVictorHugoKleber15, HotelVictorHugoKleber2, HotelVictorHugoKleber3, HotelVictorHugoKleber4, HotelVictorHugoKleber5, HotelVictorHugoKleber6, HotelVictorHugoKleber7, HotelVictorHugoKleber8, HotelVictorHugoKleber9, LaDemeureMontaigne1, LaDemeureMontaigne10, LaDemeureMontaigne11, LaDemeureMontaigne12, LaDemeureMontaigne13, LaDemeureMontaigne14, LaDemeureMontaigne15, LaDemeureMontaigne16, LaDemeureMontaigne17, LaDemeureMontaigne18, LaDemeureMontaigne19, LaDemeureMontaigne2, LaDemeureMontaigne20, LaDemeureMontaigne21, LaDemeureMontaigne22, LaDemeureMontaigne23, LaDemeureMontaigne24, LaDemeureMontaigne25, LaDemeureMontaigne26, LaDemeureMontaigne3, LaDemeureMontaigne4, LaDemeureMontaigne5, LaDemeureMontaigne6, LaDemeureMontaigne7, LaDemeureMontaigne8, LaDemeureMontaigne9, MonsieurGeorges1, MonsieurGeorges10, MonsieurGeorges11, MonsieurGeorges12, MonsieurGeorges13, MonsieurGeorges2, MonsieurGeorges3, MonsieurGeorges4, MonsieurGeorges5, MonsieurGeorges6, MonsieurGeorges7, MonsieurGeorges8, MonsieurGeorges9 } from '../assets/hotelImages';
 
 export const hotelDetails = [
   {
@@ -87,6 +88,11 @@ export const hotelDetails = [
       Facilitie3,
       Facilitie4,
       Facilitie5,
+    ],
+    slider: [
+      MonsieurGeorges1, MonsieurGeorges2, MonsieurGeorges3, MonsieurGeorges4, MonsieurGeorges5,
+      MonsieurGeorges6, MonsieurGeorges7, MonsieurGeorges8, MonsieurGeorges9, MonsieurGeorges10,
+      MonsieurGeorges11, MonsieurGeorges12, MonsieurGeorges13,
     ],
     category: "Luxury",
     price: 75.90,
@@ -134,6 +140,11 @@ export const hotelDetails = [
       Facilitie4,
       Facilitie5,
     ],
+    slider: [
+      HotelPastel1, HotelPastel2, HotelPastel3, HotelPastel4, HotelPastel5,
+      HotelPastel6, HotelPastel7, HotelPastel8, HotelPastel9, HotelPastel10,
+      HotelPastel11,
+    ],
     category: "5 Star",
     price: 75.90,
     banner: HotelPastelBanner,
@@ -179,6 +190,14 @@ export const hotelDetails = [
       Facilitie3,
       Facilitie4,
       Facilitie5,
+    ],
+    slider: [
+      LaDemeureMontaigne1, LaDemeureMontaigne2, LaDemeureMontaigne3, LaDemeureMontaigne4, LaDemeureMontaigne5,
+      LaDemeureMontaigne6, LaDemeureMontaigne7, LaDemeureMontaigne8, LaDemeureMontaigne9, LaDemeureMontaigne10,
+      LaDemeureMontaigne11, LaDemeureMontaigne12, LaDemeureMontaigne13, LaDemeureMontaigne14, LaDemeureMontaigne15,
+      LaDemeureMontaigne16, LaDemeureMontaigne17, LaDemeureMontaigne18, LaDemeureMontaigne19, LaDemeureMontaigne20,
+      LaDemeureMontaigne21, LaDemeureMontaigne22, LaDemeureMontaigne23, LaDemeureMontaigne24, LaDemeureMontaigne25,
+      LaDemeureMontaigne26,
     ],
     category: "Luxury",
     price: 75.90,
@@ -226,6 +245,10 @@ export const hotelDetails = [
       Facilitie4,
       Facilitie5,
     ],
+    slider: [
+      HotelPadam1, HotelPadam2, HotelPadam3, HotelPadam4, HotelPadam5,
+      HotelPadam6, HotelPadam7, HotelPadam8,
+    ],
     category: "Resorts",
     price: 75.90,
     banner: HotelPadamBanner,
@@ -271,6 +294,12 @@ export const hotelDetails = [
       Facilitie3,
       Facilitie4,
       Facilitie5,
+    ],
+    slider: [
+      HotelDadou1, HotelDadou2, HotelDadou3, HotelDadou4, HotelDadou5,
+      HotelDadou6, HotelDadou7, HotelDadou8, HotelDadou9, HotelDadou10,
+      HotelDadou11, HotelDadou12, HotelDadou13, HotelDadou14, HotelDadou15,
+      HotelDadou16,
     ],
     category: "Apartments",
     price: 75.90,
@@ -318,6 +347,13 @@ export const hotelDetails = [
       Facilitie4,
       Facilitie5,
     ],
+    slider: [
+      HotelKeppler1, HotelKeppler2, HotelKeppler3, HotelKeppler4, HotelKeppler5,
+      HotelKeppler6, HotelKeppler7, HotelKeppler8, HotelKeppler9, HotelKeppler10,
+      HotelKeppler11, HotelKeppler12, HotelKeppler13, HotelKeppler14, HotelKeppler15,
+      HotelKeppler16, HotelKeppler17, HotelKeppler18, HotelKeppler19, HotelKeppler20,
+      HotelKeppler21, HotelKeppler22, HotelKeppler23, HotelKeppler24,
+    ],
     category: "Apartments",
     price: 75.90,
     banner: HotelKepplerBanner,
@@ -363,6 +399,11 @@ export const hotelDetails = [
       Facilitie3,
       Facilitie4,
       Facilitie5,
+    ],
+    slider: [
+      HotelVictorHugoKleber1, HotelVictorHugoKleber2, HotelVictorHugoKleber3, HotelVictorHugoKleber4, HotelVictorHugoKleber5,
+      HotelVictorHugoKleber6, HotelVictorHugoKleber7, HotelVictorHugoKleber8, HotelVictorHugoKleber9, HotelVictorHugoKleber10,
+      HotelVictorHugoKleber11, HotelVictorHugoKleber12, HotelVictorHugoKleber13, HotelVictorHugoKleber14, HotelVictorHugoKleber15
     ],
     category: "Apartments",
     price: 75.90,

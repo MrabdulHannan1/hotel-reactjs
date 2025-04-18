@@ -15,7 +15,7 @@ import MonsieurGeorges13 from './Monsieur-Georges/room-near-avenue-kleber-3.jpg'
 
 // La Demeure Montaigne Hotel Images
 import LaDemeureMontaigne1 from './La-Demeure-Montaigne/Boutique-Hotel-Paris-avenue-Kleber.jpg';
-import LaDemeureMontaigne2 from './La-Demeure-Montaigne/Boutique-Hotel-Paris-Kleber';
+import LaDemeureMontaigne2 from './La-Demeure-Montaigne/Boutique-Hotel-Paris-Kleber.jpg';
 import LaDemeureMontaigne3 from './La-Demeure-Montaigne/Hotel-Boutique-Paris-avenue-Kleber.jpg';
 import LaDemeureMontaigne4 from './La-Demeure-Montaigne/Hotel-Kleber-Quarter-Paris.jpg';
 import LaDemeureMontaigne5 from './La-Demeure-Montaigne/Hotel-Kleber-Quarter-Paris-2.jpg';

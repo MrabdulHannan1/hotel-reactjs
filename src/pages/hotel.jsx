@@ -64,7 +64,7 @@ const Hotel = () => {
           overviewDetails2={item.overviewDetails2}
           overviewDetails3={item.overviewDetails3}
           overviewImage={item.overviewImage}
-          facilitiesImages={item.facilities} />
+          slider={item.slider} />
       </div>
 
       <div ref={photosRef}>
