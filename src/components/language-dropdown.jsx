@@ -40,11 +40,38 @@ export function LanguageDropdown() {
     setSelectedLanguage(language)
     setIsOpen(false)
 
-    const googleCombo = document.querySelector(".goog-te-combo")
-    if (googleCombo) {
-      googleCombo.value = language.code
-      googleCombo.dispatchEvent(new Event("change"))
+    // Wait for Google Translate to be fully loaded
+    const checkAndChangeLanguage = () => {
+      const googleCombo = document.querySelector(".goog-te-combo")
+      if (googleCombo) {
+        // Store the current scroll position
+        const scrollPosition = window.scrollY;
+        
+        // Change the language
+        googleCombo.value = language.code
+        const event = new Event('change', { bubbles: true })
+        googleCombo.dispatchEvent(event)
+
+        // For English, we need to remove the translation
+        if (language.code === 'en') {
+          // Remove the translation class from body
+          document.body.classList.remove('translated-ltr', 'translated-rtl')
+          // Remove the translation iframe
+          const iframe = document.querySelector('.goog-te-banner-frame')
+          if (iframe) iframe.remove()
+        }
+
+        // Restore scroll position after a short delay
+        setTimeout(() => {
+          window.scrollTo(0, scrollPosition)
+        }, 100)
+      } else {
+        // If Google Translate isn't ready yet, try again in 100ms
+        setTimeout(checkAndChangeLanguage, 100)
+      }
     }
+
+    checkAndChangeLanguage()
   }
 
   return (

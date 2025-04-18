@@ -2,8 +2,8 @@ import React from 'react';
 import MaxWidthWrapper from './max-width-wrapper';
 import Logo from '../assets/logo.svg';
 import { Link } from 'react-router';
-import { LanguageDropdown } from '../components/language-dropdown';
-import GoogleTranslate from '../components/GoogleTranslate';
+import { LanguageDropdown } from './language-dropdown';
+import GoogleTranslate from './GoogleTranslate';
 
 const LogoBar = () => {
   return (
@@ -14,12 +14,9 @@ const LogoBar = () => {
           <Link to="/">
             <img src={Logo} className="h-12 md:h-22 object-contain" alt="Logo" />
           </Link>
-          <div id="google_translate_element" style={{ display: "none" }}></div>
           <div className="flex items-center gap-2">
             <LanguageDropdown />
-            <div className='hidden'>
-              <GoogleTranslate />
-            </div>
+            <GoogleTranslate />
           </div>
         </div>
       </MaxWidthWrapper>
