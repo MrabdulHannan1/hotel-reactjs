@@ -100,7 +100,7 @@ export const hotelDetails = [
     overviewImage: MonsieurGeorgesOverview,
     roomImage: MonsieurGeorgesRoom,
     locationImage: MonsieurGeorgesLocation,
-    addressURL: "https://maps.app.goo.gl/XCXq6qQ4sXKt5VJ8A"
+    addressURL: "https://maps.app.goo.gl/XCXq6qQ4sXKt5VJ8A",
     // addressURL: "https://www.google.com/maps/place/17+Rue+Washington,+75008+Paris,+France/@48.8731301,2.3024321,19.33z/data=!4m6!3m5!1s0x47e66fc1ec4e3729:0xe6b164a2d37bcfe3!8m2!3d48.8730276!4d2.3025216!16s%2Fg%2F11c43v7pb8?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
