@@ -40,7 +40,6 @@ const Hotel = () => {
   return (
     <div>
 
-      <GDPRBanner />
       <LogoBar />
       <HotelHeroSection 
         image={item.banner} 
