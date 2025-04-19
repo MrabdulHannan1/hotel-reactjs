@@ -100,7 +100,7 @@ export const hotelDetails = [
     overviewImage: MonsieurGeorgesOverview,
     roomImage: MonsieurGeorgesRoom,
     locationImage: MonsieurGeorgesLocation,
-    addressURL: "https://maps.app.goo.gl/XCXq6qQ4sXKt5VJ8A",
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.0282668166093!2d2.2979819!3d48.8686542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe85f01688d%3A0xdca6da21d8d476bc!2s9%20Rue%20Jean%20Giraudoux%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745057880490!5m2!1sen!2s",
     // addressURL: "https://www.google.com/maps/place/17+Rue+Washington,+75008+Paris,+France/@48.8731301,2.3024321,19.33z/data=!4m6!3m5!1s0x47e66fc1ec4e3729:0xe6b164a2d37bcfe3!8m2!3d48.8730276!4d2.3025216!16s%2Fg%2F11c43v7pb8?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
