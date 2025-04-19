@@ -100,7 +100,7 @@ export const hotelDetails = [
     overviewImage: MonsieurGeorgesOverview,
     roomImage: MonsieurGeorgesRoom,
     locationImage: MonsieurGeorgesLocation,
-    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.0282668166093!2d2.2979819!3d48.8686542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe85f01688d%3A0xdca6da21d8d476bc!2s9%20Rue%20Jean%20Giraudoux%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745057880490!5m2!1sen!2s",
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.0543753765472!2d2.3024321!3d48.8731301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc1ec4e3729%3A0xe6b164a2d37bcfe3!2s17%20Rue%20Washington%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062143701!5m2!1sen!2s",
     // addressURL: "https://www.google.com/maps/place/17+Rue+Washington,+75008+Paris,+France/@48.8731301,2.3024321,19.33z/data=!4m6!3m5!1s0x47e66fc1ec4e3729:0xe6b164a2d37bcfe3!8m2!3d48.8730276!4d2.3025216!16s%2Fg%2F11c43v7pb8?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
   {
@@ -152,7 +152,7 @@ export const hotelDetails = [
     overviewImage: HotelPastelOverview,
     roomImage: HotelPastelRoom,
     locationImage: HotelPastelLocation,
-    addressURL: "https://www.google.com/maps/place/79+Rue+Lauriston,+75116+Paris,+France/@48.8683918,2.2891492,19.87z/data=!4m15!1m8!3m7!1s0x47e66ff01dd67683:0x2ca49de2437f6d0a!2s79+Rue+Lauriston,+75116+Paris,+France!3b1!8m2!3d48.8683541!4d2.2891284!16s%2Fg%2F11cnd94djf!3m5!1s0x47e66ff01dd67683:0x2ca49de2437f6d0a!8m2!3d48.8683541!4d2.2891284!16s%2Fg%2F11cnd94djf?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.116507958991!2d2.2891492!3d48.8683918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff01dd67683%3A0x2ca49de2437f6d0a!2s79%20Rue%20Lauriston%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062239626!5m2!1sen!2s"
   },
   {
     id: 3,
@@ -206,10 +206,11 @@ export const hotelDetails = [
     overviewImage: LaDemeureMontaigneOverview,
     roomImage: LaDemeureMontaigneRoom,
     locationImage: LaDemeureMontaigneLocation,
-    addressURL: "https://www.google.com/maps/place/18+Rue+Cl%C3%A9ment+Marot,+75008+Paris,+France/@48.8679734,2.303199,19.33z/data=!4m6!3m5!1s0x47e66fc327c53bdd:0x8716c83a89f0908a!8m2!3d48.8678483!4d2.3033176!16s%2Fg%2F11bw3y_fzl?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.1219941567618!2d2.303199!3d48.8679734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc327c53bdd%3A0x8716c83a89f0908a!2s18%20Rue%20Cl%C3%A9ment%20Marot%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062423823!5m2!1sen!2s"
   },
   {
     id: 4,
+    //addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.0282668166093!2d2.2979819!3d48.8686542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe85f01688d%3A0xdca6da21d8d476bc!2s9%20Rue%20Jean%20Giraudoux%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745057880490!5m2!1sen!2s",
     hotelName: "Hotel Padam",
     hotelTag: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     location: "9 rue Jean-Giraudoux 75016 Paris",
@@ -256,7 +257,7 @@ export const hotelDetails = [
     overviewImage: HotelPadamOverview,
     roomImage: HotelPadamRoom,
     locationImage: HotelPadamLocation,
-    addressURL: "https://www.google.com/maps/place/9+Rue+Jean+Giraudoux,+75116+Paris,+France/@48.8686542,2.2979819,21z/data=!4m6!3m5!1s0x47e66fe85f01688d:0xdca6da21d8d476bc!8m2!3d48.8686672!4d2.2978713!16s%2Fg%2F11bw41711c?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.0282668166093!2d2.2979819!3d48.8686542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe85f01688d%3A0xdca6da21d8d476bc!2s9%20Rue%20Jean%20Giraudoux%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745057880490!5m2!1sen!2s",
   },
   {
     id: 5,
@@ -308,7 +309,7 @@ export const hotelDetails = [
     overviewImage: HotelDadouOverview,
     roomImage: HotelDadouRoom,
     locationImage: HotelDadouLocation,
-    addressURL: "https://www.google.com/maps/place/10+Rue+Troyon,+75017+Paris,+France/@48.8758287,2.2958616,21z/data=!4m6!3m5!1s0x47e66feb605c0ac9:0xeb3bbc232a500a7d!8m2!3d48.8760005!4d2.2956705!16s%2Fg%2F11bw43357t?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.00474676347662!2d2.2958616!3d48.8758287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66feb605c0ac9%3A0xeb3bbc232a500a7d!2s10%20Rue%20Troyon%2C%2075017%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062556705!5m2!1sen!2s"
   },
   {
     id: 6,
@@ -361,7 +362,7 @@ export const hotelDetails = [
     overviewImage: HotelKepplerOverview,
     roomImage: HotelKepplerRoom,
     locationImage: HotelKepplerLocation,
-    addressURL: "https://www.google.com/maps/place/10+Rue+Kepler,+75116+Paris,+France/@48.869858,2.2971227,21z/data=!4m6!3m5!1s0x47e66fe9024b8bc5:0x5ba86a3e64e3bc91!8m2!3d48.869897!4d2.2973565!16s%2Fg%2F11c3q3p76s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d328.04869469258165!2d2.2972199300767704!3d48.86984984020026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe9024b8bc5%3A0x5ba86a3e64e3bc91!2s10%20Rue%20Kepler%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062632133!5m2!1sen!2s"
   },
   {
     id: 7,
@@ -412,6 +413,6 @@ export const hotelDetails = [
     overviewImage: HotelVictorHugoKleberOverview,
     roomImage: HotelVictorHugoKleberRoom,
     locationImage: HotelVictorHugoKleberLocation,
-    addressURL: "https://www.google.com/maps/place/19+Rue+Copernic,+75116+Paris,+France/@48.8693169,2.2885809,20.33z/data=!4m6!3m5!1s0x47e66ff02718f9eb:0xb78188fee5c964fb!8m2!3d48.8691545!4d2.2892091!16s%2Fg%2F11csf44_z9?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
+    addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d328.05218881036984!2d2.2885809!3d48.8693169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff02718f9eb%3A0xb78188fee5c964fb!2s19%20Rue%20Copernic%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062699714!5m2!1sen!2s"
   },
 ]

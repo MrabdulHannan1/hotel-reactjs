@@ -32,7 +32,7 @@ const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, faciliti
           {
             slider.map((item) => (
               <div key={item.id} className="w-full h-full">
-                <img src={item} className="w-full h-full object-cover" alt='image' />
+                <img src={item} className="w-full h-full object-fill" alt='image' />
               </div>
             ))
           }

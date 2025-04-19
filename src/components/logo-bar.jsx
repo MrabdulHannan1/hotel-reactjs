@@ -12,8 +12,9 @@ const LogoBar = () => {
         <div className="flex items-center justify-between">
           <div className="w-32 h-8 hidden md:block" />
           <Link to="/">
-            <img src={Logo} className="h-12 md:h-22 object-contain" alt="Logo" />
-          </Link>
+          <span className="font-gilroy font-extrabold text-xl">
+  Paris Hotel Kleber .com
+</span>          </Link>
           <div className="flex items-center gap-2">
             <LanguageDropdown />
             <GoogleTranslate />
