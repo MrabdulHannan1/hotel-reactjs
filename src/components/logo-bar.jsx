@@ -14,7 +14,7 @@ const LogoBar = () => {
           <Link to="/">
           <span className="font-gilroy font-extrabold text-xl">
   Paris Hotel Kleber .com
-</span>          </Link>
+</span>  </Link>
           <div className="flex items-center gap-2">
             <LanguageDropdown />
             <GoogleTranslate />

@@ -43,8 +43,10 @@ const Footer = () => {
             </p>
           </Link>
           <Link to='/'>
-            <img src={FooterLogo} className='h-12 md:h-22 object-contain' alt='Logo' />
-          </Link>
+          <span className="font-gilroy text-white
+font-extrabold text-xl">
+  Paris Hotel Kleber .com
+</span>          </Link>
           <Link to='/contact'>
             <p className='text-base md:text-lg font-bold text-white'>
               Contact us
