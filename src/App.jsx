@@ -5,8 +5,6 @@ import About from './pages/about'
 import Hotel from './pages/hotel'
 import Contact from './pages/contact'
 
-
-
 const App = () => {
  
   return (

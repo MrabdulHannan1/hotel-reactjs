@@ -10,7 +10,7 @@ import HotelReviewSection from '../components/hotel-review-section';
 import Footer from '../components/footer';
 import HotelFacilitiesSection from '../components/hotel-facilities-section';
 import HotelRoomSection from '../components/hotel-room-section';
-
+import GDPRBanner from '../components/gdpr';
 const Hotel = () => {
   const location = useLocation();
   const { item } = location.state || {};
@@ -39,6 +39,8 @@ const Hotel = () => {
 
   return (
     <div>
+
+      <GDPRBanner />
       <LogoBar />
       <HotelHeroSection 
         image={item.banner} 
