@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { hotelDetails } from '../lib/constants'
 import { FaArrowRight } from "react-icons/fa6";
 import { Link, useNavigate } from 'react-router';
+import MapModal from './map-modal';
 
 const HotelListBody = ({ hotels }) => {
   const navigate = useNavigate();
+  const [selectedMapUrl, setSelectedMapUrl] = useState(null);
 
   const handleSeeDetails = (item) => {
     navigate('/hotel', { state: { item } });
   };
+
   return (
     <div>
       {
         hotels.map((item) => (
-          <div className='drop-shadow-xl mb-12 md:mb-20'>
+          <div className='drop-shadow-xl mb-12 md:mb-20' key={item.id}>
 
             {/* Desktop */}
             <div className='hidden lg:grid grid-cols-2 h-120  overflow-hidden'>
@@ -31,9 +34,12 @@ const HotelListBody = ({ hotels }) => {
                     <span className='text-lg font-bold text-black'>Location:</span> {" "}
                     <span className='text-lg text-myGrayText'>{item.location}</span>
                   </div>
-                  <a href={item.addressURL} target="_blank" rel="noopener noreferrer" className='text-lg text-myBlue font-semibold underline underline-offset-2'>
+                  <button 
+                    onClick={() => setSelectedMapUrl(item.addressURL)}
+                    className='text-lg text-myBlue font-semibold underline underline-offset-2'
+                  >
                     View Map
-                  </a>
+                  </button>
                 </div>
                 <p className='text-lg text-myGrayText mt-2 line-clamp-4'>{item.details}</p>
                 <div className='grid grid-cols-3 mt-4 gap-2'>
@@ -73,9 +79,12 @@ const HotelListBody = ({ hotels }) => {
                     <span className='text-base md:text-lg font-bold text-black'>Location:</span> {" "}
                     <span className='text-base md:text-lg text-myGrayText'>{item.location}</span>
                   </div>
-                  <a href={item.addressURL} target="_blank" rel="noopener noreferrer" className='text-base md:text-lg text-myBlue font-semibold underline underline-offset-2'>
+                  <button 
+                    onClick={() => setSelectedMapUrl(item.addressURL)}
+                    className='text-base md:text-lg text-myBlue font-semibold underline underline-offset-2'
+                  >
                     View Map
-                  </a>
+                  </button>
                 </div>
                 <p className='text-base md:text-lg text-myGrayText mt-2'>{item.details}</p>
                 <div className='grid grid-cols-2 md:grid-cols-3 mt-4 gap-2'>
@@ -98,10 +107,14 @@ const HotelListBody = ({ hotels }) => {
                 </div>
               </div>
             </div>
-
           </div>
         ))
       }
+      <MapModal 
+        isOpen={!!selectedMapUrl}
+        onClose={() => setSelectedMapUrl(null)}
+        mapUrl={selectedMapUrl}
+      />
     </div>
   )
 }

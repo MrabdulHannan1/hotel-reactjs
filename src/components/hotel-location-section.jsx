@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 import MapImage from '../assets/map-iamge.png'
+import MapModal from './map-modal'
 
 const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, locationImage, location, Worthgettingoutofbedfor1, Worthgettingoutofbedfor2, Worthgettingoutofbedfor3, localRestaurants, hotelURL, address, addressURL }) => {
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+
   return (
     <section id='location' className='my-10'>
       <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
@@ -62,9 +65,9 @@ const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, lo
               </p>
               <img src={MapImage} alt='map' className='object-cover w-full aspect-square mt-4' />
             </div>
-            <a href={addressURL} target="_blank" rel="noopener noreferrer" className='bg-myBlue gap-2 px-6 py-4 mt-4 w-full cursor-pointer block text-center'>
+            <button onClick={() => setIsMapModalOpen(true)} className='bg-myBlue gap-2 px-6 py-4 mt-4 w-full cursor-pointer block text-center'>
               <p className='text-lg font-bold text-white'>view map</p>
-            </a>
+            </button>
           </div>
         </div>
       </MaxWidthWrapper>
@@ -102,6 +105,11 @@ const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, lo
           </div>
         </div>
       </MaxWidthWrapper>
+      <MapModal 
+        isOpen={isMapModalOpen}
+        onClose={() => setIsMapModalOpen(false)}
+        mapUrl={addressURL}
+      />
     </section>
   )
 }
