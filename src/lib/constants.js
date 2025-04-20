@@ -6,49 +6,7 @@ export const hotelCategories = [
   { name: "Apartments", count: 2, active: false },
 ];
 
-// Hotels Banners
-import MonsieurGeorgesBanner from '../assets/monsieur-georges-banner.png';
-import HotelPastelBanner from '../assets//hotel-pastel-banner.png';
-import LaDemeureMontaigneBanner from '../assets/la-demeure-montaigne-banner.png';
-import HotelPadamBanner from '../assets/hotel-padam-banner.png';
-import HotelDadouBanner from '../assets/hotel-dadou-banner.png';
-import HotelKepplerBanner from '../assets/hotel-keppler-banner.png';
-import HotelVictorHugoKleberBanner from '../assets/hotel-victor-hugo-kleber-banner.png';
-
-// Hotel Overview Image
-import MonsieurGeorgesOverview from '../assets/overview-image.png'
-import HotelPastelOverview from '../assets/overview-image.png'
-import LaDemeureMontaigneOverview from '../assets/overview-image.png'
-import HotelPadamOverview from '../assets/overview-image.png'
-import HotelDadouOverview from '../assets/overview-image.png'
-import HotelKepplerOverview from '../assets/overview-image.png'
-import HotelVictorHugoKleberOverview from '../assets/overview-image.png'
-
-// Hotels Room Images
-import MonsieurGeorgesRoom from '../assets/room-image.png'
-import HotelPastelRoom from '../assets/room-image.png'
-import LaDemeureMontaigneRoom from '../assets/room-image.png'
-import HotelPadamRoom from '../assets/room-image.png'
-import HotelDadouRoom from '../assets/room-image.png'
-import HotelKepplerRoom from '../assets/room-image.png'
-import HotelVictorHugoKleberRoom from '../assets/room-image.png'
-
-// Hotel Location Images
-import MonsieurGeorgesLocation from '../assets/location-image.png'
-import HotelPastelLocation from '../assets/location-image.png'
-import LaDemeureMontaigneLocation from '../assets/location-image.png'
-import HotelPadamLocation from '../assets/location-image.png'
-import HotelDadouLocation from '../assets/location-image.png'
-import HotelKepplerLocation from '../assets/location-image.png'
-import HotelVictorHugoKleberLocation from '../assets/location-image.png'
-
-// Facilities Images
-import Facilitie1 from '../assets/facilities-1.png'
-import Facilitie2 from '../assets/facilities-2.png'
-import Facilitie3 from '../assets/facilities-3.png'
-import Facilitie4 from '../assets/facilities-4.png'
-import Facilitie5 from '../assets/facilities-5.png'
-import { HotelDadou1, HotelDadou10, HotelDadou11, HotelDadou12, HotelDadou13, HotelDadou14, HotelDadou15, HotelDadou16, HotelDadou2, HotelDadou3, HotelDadou4, HotelDadou5, HotelDadou6, HotelDadou7, HotelDadou8, HotelDadou9, HotelKeppler1, HotelKeppler10, HotelKeppler11, HotelKeppler12, HotelKeppler13, HotelKeppler14, HotelKeppler15, HotelKeppler16, HotelKeppler17, HotelKeppler18, HotelKeppler19, HotelKeppler2, HotelKeppler20, HotelKeppler21, HotelKeppler22, HotelKeppler23, HotelKeppler24, HotelKeppler3, HotelKeppler4, HotelKeppler5, HotelKeppler6, HotelKeppler7, HotelKeppler8, HotelKeppler9, HotelPadam1, HotelPadam2, HotelPadam3, HotelPadam4, HotelPadam5, HotelPadam6, HotelPadam7, HotelPadam8, HotelPastel1, HotelPastel10, HotelPastel11, HotelPastel2, HotelPastel3, HotelPastel4, HotelPastel5, HotelPastel6, HotelPastel7, HotelPastel8, HotelPastel9, HotelVictorHugoKleber1, HotelVictorHugoKleber10, HotelVictorHugoKleber11, HotelVictorHugoKleber12, HotelVictorHugoKleber13, HotelVictorHugoKleber14, HotelVictorHugoKleber15, HotelVictorHugoKleber2, HotelVictorHugoKleber3, HotelVictorHugoKleber4, HotelVictorHugoKleber5, HotelVictorHugoKleber6, HotelVictorHugoKleber7, HotelVictorHugoKleber8, HotelVictorHugoKleber9, LaDemeureMontaigne1, LaDemeureMontaigne10, LaDemeureMontaigne11, LaDemeureMontaigne12, LaDemeureMontaigne13, LaDemeureMontaigne14, LaDemeureMontaigne15, LaDemeureMontaigne16, LaDemeureMontaigne17, LaDemeureMontaigne18, LaDemeureMontaigne19, LaDemeureMontaigne2, LaDemeureMontaigne20, LaDemeureMontaigne21, LaDemeureMontaigne22, LaDemeureMontaigne23, LaDemeureMontaigne24, LaDemeureMontaigne25, LaDemeureMontaigne26, LaDemeureMontaigne3, LaDemeureMontaigne4, LaDemeureMontaigne5, LaDemeureMontaigne6, LaDemeureMontaigne7, LaDemeureMontaigne8, LaDemeureMontaigne9, MonsieurGeorges1, MonsieurGeorges10, MonsieurGeorges11, MonsieurGeorges12, MonsieurGeorges13, MonsieurGeorges2, MonsieurGeorges3, MonsieurGeorges4, MonsieurGeorges5, MonsieurGeorges6, MonsieurGeorges7, MonsieurGeorges8, MonsieurGeorges9 } from '../assets/hotelImages';
+import { hotelDadou, hotelDadouFacilities1, hotelDadouFacilities2, hotelDadouFacilities3, hotelDadouFacilities4, hotelDadouFacilities5, hotelDadouHero, hotelDadouLocation, hotelDadouRooms1, hotelDadouRooms2, hotelDadouRooms3, hotelDadouRooms4, hotelDadouRooms5, hotelDadouSlider1, hotelDadouSlider2, hotelDadouSlider3, hotelDadouSlider4, hotelKeppler, hotelKepplerFacilities1, hotelKepplerFacilities2, hotelKepplerFacilities3, hotelKepplerFacilities4, hotelKepplerFacilities5, hotelKepplerHero, hotelKepplerLocation, hotelKepplerRooms1, hotelKepplerRooms2, hotelKepplerRooms3, hotelKepplerRooms4, hotelKepplerRooms5, hotelKepplerSlider1, hotelKepplerSlider2, hotelKepplerSlider3, hotelKepplerSlider4, hotelKepplerSlider5, hotelKepplerSlider6, hotelPadam, hotelPadamFacilities1, hotelPadamFacilities2, hotelPadamFacilities3, hotelPadamHero, hotelPadamLocation, hotelPadamRooms1, hotelPadamRooms2, hotelPadamRooms3, hotelPadamSlider1, hotelPadamSlider2, hotelPadamSlider3, hotelPadamSlider4, hotelPastel, hotelPastelFacilities1, hotelPastelFacilities2, hotelPastelFacilities3, hotelPastelHero, hotelPastelLocation, hotelPastelRooms1, hotelPastelRooms2, hotelPastelRooms3, hotelPastelSlider1, hotelPastelSlider2, hotelPastelSlider3, hotelPastelSlider4, hotelVictorHugoKleber, hotelVictorHugoKleberFacilities1, hotelVictorHugoKleberFacilities2, hotelVictorHugoKleberFacilities3, hotelVictorHugoKleberFacilities4, hotelVictorHugoKleberHero, hotelVictorHugoKleberLocation, hotelVictorHugoKleberRooms1, hotelVictorHugoKleberRooms2, hotelVictorHugoKleberRooms3, hotelVictorHugoKleberRooms4, hotelVictorHugoKleberSlider1, hotelVictorHugoKleberSlider2, hotelVictorHugoKleberSlider3, hotelVictorHugoKleberSlider4, hotelVictorHugoKleberSlider5, laDemeureMontaigne, laDemeureMontaigneFacilities1, laDemeureMontaigneFacilities2, laDemeureMontaigneFacilities3, laDemeureMontaigneFacilities4, laDemeureMontaigneFacilities5, laDemeureMontaigneHero, laDemeureMontaigneLocation, laDemeureMontaigneRooms1, laDemeureMontaigneRooms2, laDemeureMontaigneRooms3, laDemeureMontaigneRooms4, laDemeureMontaigneRooms5, laDemeureMontaigneSlider1, laDemeureMontaigneSlider2, laDemeureMontaigneSlider3, laDemeureMontaigneSlider4, laDemeureMontaigneSlider5, monsieurGeorges, monsieurGeorgesFacilities1, monsieurGeorgesFacilities2, monsieurGeorgesFacilities3, monsieurGeorgesFacilities4, monsieurGeorgesHero, monsieurGeorgesLocation, monsieurGeorgesRooms1, monsieurGeorgesRooms2, monsieurGeorgesRooms3, monsieurGeorgesRooms4, monsieurGeorgesSlider1, monsieurGeorgesSlider2, monsieurGeorgesSlider3, monsieurGeorgesSlider4 } from "../assets/hotelImages";
 
 export const hotelDetails = [
   {
@@ -83,23 +41,28 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      monsieurGeorgesFacilities1,
+      monsieurGeorgesFacilities2,
+      monsieurGeorgesFacilities3,
+      monsieurGeorgesFacilities4,
+    ],
+    rooms: [
+      monsieurGeorgesRooms1,
+      monsieurGeorgesRooms2,
+      monsieurGeorgesRooms3,
+      monsieurGeorgesRooms4,
     ],
     slider: [
-      MonsieurGeorges1, MonsieurGeorges2, MonsieurGeorges3, MonsieurGeorges4, MonsieurGeorges5,
-      MonsieurGeorges6, MonsieurGeorges7, MonsieurGeorges8, MonsieurGeorges9, MonsieurGeorges10,
-      MonsieurGeorges11, MonsieurGeorges12, MonsieurGeorges13,
+      monsieurGeorgesSlider1,
+      monsieurGeorgesSlider2,
+      monsieurGeorgesSlider3,
+      monsieurGeorgesSlider4,
     ],
     category: "Luxury",
     price: 75.90,
-    banner: MonsieurGeorgesBanner,
-    overviewImage: MonsieurGeorgesOverview,
-    roomImage: MonsieurGeorgesRoom,
-    locationImage: MonsieurGeorgesLocation,
+    banner: monsieurGeorges,
+    heroImage: monsieurGeorgesHero,
+    locationImage: monsieurGeorgesLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.0543753765472!2d2.3024321!3d48.8731301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc1ec4e3729%3A0xe6b164a2d37bcfe3!2s17%20Rue%20Washington%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062143701!5m2!1sen!2s",
     // addressURL: "https://www.google.com/maps/place/17+Rue+Washington,+75008+Paris,+France/@48.8731301,2.3024321,19.33z/data=!4m6!3m5!1s0x47e66fc1ec4e3729:0xe6b164a2d37bcfe3!8m2!3d48.8730276!4d2.3025216!16s%2Fg%2F11c43v7pb8?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
   },
@@ -135,23 +98,26 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      hotelPastelFacilities1,
+      hotelPastelFacilities2,
+      hotelPastelFacilities3,
+    ],
+    rooms: [
+      hotelPastelRooms1,
+      hotelPastelRooms2,
+      hotelPastelRooms3,
     ],
     slider: [
-      HotelPastel1, HotelPastel2, HotelPastel3, HotelPastel4, HotelPastel5,
-      HotelPastel6, HotelPastel7, HotelPastel8, HotelPastel9, HotelPastel10,
-      HotelPastel11,
+      hotelPastelSlider1,
+      hotelPastelSlider2,
+      hotelPastelSlider3,
+      hotelPastelSlider4,
     ],
     category: "5 Star",
     price: 75.90,
-    banner: HotelPastelBanner,
-    overviewImage: HotelPastelOverview,
-    roomImage: HotelPastelRoom,
-    locationImage: HotelPastelLocation,
+    banner: hotelPastel,
+    heroImage: hotelPastelHero,
+    locationImage: hotelPastelLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.116507958991!2d2.2891492!3d48.8683918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff01dd67683%3A0x2ca49de2437f6d0a!2s79%20Rue%20Lauriston%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062239626!5m2!1sen!2s"
   },
   {
@@ -186,26 +152,31 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      laDemeureMontaigneFacilities1,
+      laDemeureMontaigneFacilities2,
+      laDemeureMontaigneFacilities3,
+      laDemeureMontaigneFacilities4,
+      laDemeureMontaigneFacilities5,
+    ],
+    rooms: [
+      laDemeureMontaigneRooms1,
+      laDemeureMontaigneRooms2,
+      laDemeureMontaigneRooms3,
+      laDemeureMontaigneRooms4,
+      laDemeureMontaigneRooms5,
     ],
     slider: [
-      LaDemeureMontaigne1, LaDemeureMontaigne2, LaDemeureMontaigne3, LaDemeureMontaigne4, LaDemeureMontaigne5,
-      LaDemeureMontaigne6, LaDemeureMontaigne7, LaDemeureMontaigne8, LaDemeureMontaigne9, LaDemeureMontaigne10,
-      LaDemeureMontaigne11, LaDemeureMontaigne12, LaDemeureMontaigne13, LaDemeureMontaigne14, LaDemeureMontaigne15,
-      LaDemeureMontaigne16, LaDemeureMontaigne17, LaDemeureMontaigne18, LaDemeureMontaigne19, LaDemeureMontaigne20,
-      LaDemeureMontaigne21, LaDemeureMontaigne22, LaDemeureMontaigne23, LaDemeureMontaigne24, LaDemeureMontaigne25,
-      LaDemeureMontaigne26,
+      laDemeureMontaigneSlider1,
+      laDemeureMontaigneSlider2,
+      laDemeureMontaigneSlider3,
+      laDemeureMontaigneSlider4,
+      laDemeureMontaigneSlider5,
     ],
     category: "Luxury",
     price: 75.90,
-    banner: LaDemeureMontaigneBanner,
-    overviewImage: LaDemeureMontaigneOverview,
-    roomImage: LaDemeureMontaigneRoom,
-    locationImage: LaDemeureMontaigneLocation,
+    banner: laDemeureMontaigne,
+    heroImage: laDemeureMontaigneHero,
+    locationImage: laDemeureMontaigneLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d656.1219941567618!2d2.303199!3d48.8679734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc327c53bdd%3A0x8716c83a89f0908a!2s18%20Rue%20Cl%C3%A9ment%20Marot%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062423823!5m2!1sen!2s"
   },
   {
@@ -241,22 +212,26 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      hotelPadamFacilities1,
+      hotelPadamFacilities2,
+      hotelPadamFacilities3,
+    ],
+    rooms: [
+      hotelPadamRooms1,
+      hotelPadamRooms2,
+      hotelPadamRooms3,
     ],
     slider: [
-      HotelPadam1, HotelPadam2, HotelPadam3, HotelPadam4, HotelPadam5,
-      HotelPadam6, HotelPadam7, HotelPadam8,
+      hotelPadamSlider1,
+      hotelPadamSlider2,
+      hotelPadamSlider3,
+      hotelPadamSlider4,
     ],
     category: "Resorts",
     price: 75.90,
-    banner: HotelPadamBanner,
-    overviewImage: HotelPadamOverview,
-    roomImage: HotelPadamRoom,
-    locationImage: HotelPadamLocation,
+    banner: hotelPadam,
+    heroImage: hotelPadamHero,
+    locationImage: hotelPadamLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.0282668166093!2d2.2979819!3d48.8686542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe85f01688d%3A0xdca6da21d8d476bc!2s9%20Rue%20Jean%20Giraudoux%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745057880490!5m2!1sen!2s",
   },
   {
@@ -291,24 +266,30 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      hotelDadouFacilities1,
+      hotelDadouFacilities2,
+      hotelDadouFacilities3,
+      hotelDadouFacilities4,
+      hotelDadouFacilities5,
+    ],
+    rooms: [
+      hotelDadouRooms1,
+      hotelDadouRooms2,
+      hotelDadouRooms3,
+      hotelDadouRooms4,
+      hotelDadouRooms5,
     ],
     slider: [
-      HotelDadou1, HotelDadou2, HotelDadou3, HotelDadou4, HotelDadou5,
-      HotelDadou6, HotelDadou7, HotelDadou8, HotelDadou9, HotelDadou10,
-      HotelDadou11, HotelDadou12, HotelDadou13, HotelDadou14, HotelDadou15,
-      HotelDadou16,
+      hotelDadouSlider1,
+      hotelDadouSlider2,
+      hotelDadouSlider3,
+      hotelDadouSlider4,
     ],
     category: "Apartments",
     price: 75.90,
-    banner: HotelDadouBanner,
-    overviewImage: HotelDadouOverview,
-    roomImage: HotelDadouRoom,
-    locationImage: HotelDadouLocation,
+    banner: hotelDadou,
+    heroImage: hotelDadouHero,
+    locationImage: hotelDadouLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d164.00474676347662!2d2.2958616!3d48.8758287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66feb605c0ac9%3A0xeb3bbc232a500a7d!2s10%20Rue%20Troyon%2C%2075017%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062556705!5m2!1sen!2s"
   },
   {
@@ -343,25 +324,32 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      hotelKepplerFacilities1,
+      hotelKepplerFacilities2,
+      hotelKepplerFacilities3,
+      hotelKepplerFacilities4,
+      hotelKepplerFacilities5,
+    ],
+    rooms: [
+      hotelKepplerRooms1,
+      hotelKepplerRooms2,
+      hotelKepplerRooms3,
+      hotelKepplerRooms4,
+      hotelKepplerRooms5,
     ],
     slider: [
-      HotelKeppler1, HotelKeppler2, HotelKeppler3, HotelKeppler4, HotelKeppler5,
-      HotelKeppler6, HotelKeppler7, HotelKeppler8, HotelKeppler9, HotelKeppler10,
-      HotelKeppler11, HotelKeppler12, HotelKeppler13, HotelKeppler14, HotelKeppler15,
-      HotelKeppler16, HotelKeppler17, HotelKeppler18, HotelKeppler19, HotelKeppler20,
-      HotelKeppler21, HotelKeppler22, HotelKeppler23, HotelKeppler24,
+      hotelKepplerSlider1,
+      hotelKepplerSlider2,
+      hotelKepplerSlider3,
+      hotelKepplerSlider4,
+      hotelKepplerSlider5,
+      hotelKepplerSlider6,
     ],
     category: "Apartments",
     price: 75.90,
-    banner: HotelKepplerBanner,
-    overviewImage: HotelKepplerOverview,
-    roomImage: HotelKepplerRoom,
-    locationImage: HotelKepplerLocation,
+    banner: hotelKeppler,
+    heroImage: hotelKepplerHero,
+    locationImage: hotelKepplerLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d328.04869469258165!2d2.2972199300767704!3d48.86984984020026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe9024b8bc5%3A0x5ba86a3e64e3bc91!2s10%20Rue%20Kepler%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062632133!5m2!1sen!2s"
   },
   {
@@ -396,23 +384,29 @@ export const hotelDetails = [
       "Breakfast",
     ],
     facilities: [
-      Facilitie1,
-      Facilitie2,
-      Facilitie3,
-      Facilitie4,
-      Facilitie5,
+      hotelVictorHugoKleberFacilities1,
+      hotelVictorHugoKleberFacilities2,
+      hotelVictorHugoKleberFacilities3,
+      hotelVictorHugoKleberFacilities4,
+    ],
+    rooms: [
+      hotelVictorHugoKleberRooms1,
+      hotelVictorHugoKleberRooms2,
+      hotelVictorHugoKleberRooms3,
+      hotelVictorHugoKleberRooms4,
     ],
     slider: [
-      HotelVictorHugoKleber1, HotelVictorHugoKleber2, HotelVictorHugoKleber3, HotelVictorHugoKleber4, HotelVictorHugoKleber5,
-      HotelVictorHugoKleber6, HotelVictorHugoKleber7, HotelVictorHugoKleber8, HotelVictorHugoKleber9, HotelVictorHugoKleber10,
-      HotelVictorHugoKleber11, HotelVictorHugoKleber12, HotelVictorHugoKleber13, HotelVictorHugoKleber14, HotelVictorHugoKleber15
+      hotelVictorHugoKleberSlider1,
+      hotelVictorHugoKleberSlider2,
+      hotelVictorHugoKleberSlider3,
+      hotelVictorHugoKleberSlider4,
+      hotelVictorHugoKleberSlider5,
     ],
     category: "Apartments",
     price: 75.90,
-    banner: HotelVictorHugoKleberBanner,
-    overviewImage: HotelVictorHugoKleberOverview,
-    roomImage: HotelVictorHugoKleberRoom,
-    locationImage: HotelVictorHugoKleberLocation,
+    banner: hotelVictorHugoKleber,
+    heroImage: hotelVictorHugoKleberHero,
+    locationImage: hotelVictorHugoKleberLocation,
     addressURL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d328.05218881036984!2d2.2885809!3d48.8693169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff02718f9eb%3A0xb78188fee5c964fb!2s19%20Rue%20Copernic%2C%2075116%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1745062699714!5m2!1sen!2s"
   },
 ]

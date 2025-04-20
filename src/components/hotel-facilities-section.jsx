@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facilitiesDetails3, facilitiesImages, slider, overviewDetails2, overviewDetails3 }) => {
+const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facilitiesDetails3, facilitiesImages, facilitiesSlider, overviewDetails2, overviewDetails3 }) => {
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -30,7 +30,7 @@ const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facili
       <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative overflow-hidden'>
         <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {
-            slider.map((item) => (
+            facilitiesSlider.map((item) => (
               <div key={item.id} className="w-full h-full">
                 <img src={item} className="w-full h-full object-cover" alt='image' />
               </div>

@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6"
 
-const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, facilitiesDetails2, facilitiesDetails3, facilitiesImages, slider }) => {
+const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, facilitiesDetails2, facilitiesDetails3, facilitiesImages, roomsSlider, slider }) => {
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -30,7 +30,7 @@ const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, faciliti
       <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative overflow-hidden'>
         <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {
-            slider.map((item) => (
+            roomsSlider.map((item) => (
               <div key={item.id} className="w-full h-full">
                 <img src={item} className="w-full h-full object-fill" alt='image' />
               </div>
@@ -72,10 +72,10 @@ const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, faciliti
         <div className='w-full'>
           <Marquee autoFill pauseOnHover>
             {
-              Array.isArray(facilitiesImages) && facilitiesImages.length > 0 ? (
-                facilitiesImages.map((item, index) => (
+              Array.isArray(slider) && slider.length > 0 ? (
+                slider.map((item, index) => (
                   <div key={index} className='p-4'>
-                    <img src={item} className='w-100 h-100 md:h-120 lg:h-140 object-cover cursor-pointer hover:scale-105 duration-500' alt={`Facility ${index + 1}`} />
+                    <img src={item} className='w-100 h-100 md:h-100 lg:h-100 object-cover cursor-pointer hover:scale-105 duration-500' alt={`Facility ${index + 1}`} />
                   </div>
                 ))
               ) : (

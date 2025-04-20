@@ -42,7 +42,7 @@ const Hotel = () => {
 
       <LogoBar />
       <HotelHeroSection 
-        image={item.banner} 
+        image={item.heroImage} 
         location={item.location} 
         name={item.hotelName} 
         tag={item.hotelTag} 
@@ -106,7 +106,7 @@ const Hotel = () => {
         overviewDetails2={item.overviewDetails2}
         overviewDetails3={item.overviewDetails3}
         facilitiesImages={item.facilities}
-        slider={item.slider}
+        facilitiesSlider={item.facilities}
         />
       </div>
 
@@ -118,6 +118,7 @@ const Hotel = () => {
         facilitiesDetails2={item.facilitiesDetails2}
         facilitiesDetails3={item.facilitiesDetails3}
         facilitiesImages={item.facilities}
+        roomsSlider={item.rooms}
         slider={item.slider}
         />
       </div>
