@@ -36,7 +36,7 @@ import monsieurGeorgesFacilities4 from './Monsieur-Georges/Monsieur-Georges-FACI
 
 // La Demeure Montaigne Images
 import laDemeureMontaigne from './La-Demeure-Montaigne/La-Demeure-Montaigne.png';
-import laDemeureMontaigneHero from './La-Demeure-Montaigne/La-Demeure-Montaigne-hero.png';
+import laDemeureMontaigneHero from './La-Demeure-Montaigne/La-Demeure-Montaigne-Hero.png';
 import laDemeureMontaigneLocation from './La-Demeure-Montaigne/La-Demeure-Montaigne-Location.png';
 import laDemeureMontaigneSlider1 from './La-Demeure-Montaigne/La-Demeure-Montaigne-Slider-1.png';
 import laDemeureMontaigneSlider2 from './La-Demeure-Montaigne/La-Demeure-Montaigne-Slider-2.png';
