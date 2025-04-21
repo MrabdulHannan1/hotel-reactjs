@@ -38,7 +38,7 @@ Start the server
 
 ## Developers
 
-- [@Haider Mukhtar](https://github.com/Haider-Mukhtar)
-- [@Abdul Hannan](https://github.com/MrabdulHannan1)
+- [@Haider Mukhtar](https://github.com/Haider-Mukhtar).
+- [@Abdul Hannan](https://github.com/MrabdulHannan1).
 
 
