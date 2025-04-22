@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import { hotelDetails } from '../lib/constants'
 import { FaArrowRight } from "react-icons/fa6";
-import { Link, useNavigate } from 'react-router';
+import { Link, useNavigate, useParams } from 'react-router';
 import MapModal from './map-modal';
 
 const HotelListBody = ({ hotels }) => {
   const navigate = useNavigate();
+  const { lang } = useParams();
   const [selectedMapUrl, setSelectedMapUrl] = useState(null);
 
   const handleSeeDetails = (item) => {
     // Convert hotel name to URL-friendly format
     const hotelName = item.hotelName.toLowerCase().replace(/\s+/g, '-');
-    navigate(`/hotel/${hotelName}`);
+    navigate(`/${lang}/hotel/${hotelName}`);
   };
 
   return (
@@ -33,14 +34,14 @@ const HotelListBody = ({ hotels }) => {
                 </h1>
                 <div className='flex flex-row justify-between mt-2'>
                   <div>
-                    <span className='text-lg font-bold text-black'>Location:</span> {" "}
+                    <span className='text-lg font-bold text-black'>{lang === 'fr' ? 'Emplacement:' : 'Location:'}</span> {" "}
                     <span className='text-lg text-myGrayText'>{item.location}</span>
                   </div>
                   <button 
                     onClick={() => setSelectedMapUrl(item.addressURL)}
                     className='text-lg text-myBlue font-semibold underline underline-offset-2'
                   >
-                    View Map
+                    {lang === 'fr' ? 'Voir la carte' : 'View Map'}
                   </button>
                 </div>
                 <p className='text-lg text-myGrayText mt-2 line-clamp-4'>{item.details}</p>
@@ -58,7 +59,7 @@ const HotelListBody = ({ hotels }) => {
                     {/* <div className='text-lg font-bold text-black'><span className='text-[#EBBC79] text-2xl'>$ {item.price}</span>  /night</div> */}
                   </div>
                   <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 py-2 px-6 mt-4'>
-                    <p className='text-lg font-bold text-white'>SEE DETAILS</p>
+                    <p className='text-lg font-bold text-white'>{lang === 'fr' ? 'VOIR LES DÉTAILS' : 'SEE DETAILS'}</p>
                     <FaArrowRight className='size-6 fill-white' />
                   </button>
                 </div>
@@ -78,14 +79,14 @@ const HotelListBody = ({ hotels }) => {
                 </h1>
                 <div className='md:flex flex-row justify-between mt-2'>
                   <div>
-                    <span className='text-base md:text-lg font-bold text-black'>Location:</span> {" "}
+                    <span className='text-base md:text-lg font-bold text-black'>{lang === 'fr' ? 'Emplacement:' : 'Location:'}</span> {" "}
                     <span className='text-base md:text-lg text-myGrayText'>{item.location}</span>
                   </div>
                   <button 
                     onClick={() => setSelectedMapUrl(item.addressURL)}
                     className='text-base md:text-lg text-myBlue font-semibold underline underline-offset-2'
                   >
-                    View Map
+                    {lang === 'fr' ? 'Voir la carte' : 'View Map'}
                   </button>
                 </div>
                 <p className='text-base md:text-lg text-myGrayText mt-2'>{item.details}</p>
@@ -103,7 +104,7 @@ const HotelListBody = ({ hotels }) => {
                     {/*<div className='text-base md:text-lg font-bold text-black'><span className='text-[#EBBC79] text-xl md:text-2xl '>$ {item.price}</span>  /night</div>*/}
                   </div>
                   <button onClick={() => handleSeeDetails(item)} className='bg-myBlue flex items-center gap-2 py-2 px-4 md:px-6'>
-                    <p className='text-lg font-bold text-white'>SEE DETAILS</p>
+                    <p className='text-lg font-bold text-white'>{lang === 'fr' ? 'VOIR LES DÉTAILS' : 'SEE DETAILS'}</p>
                     <FaArrowRight className='size-6 fill-white' />
                   </button>
                 </div>

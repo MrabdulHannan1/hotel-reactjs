@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams, useLocation } from 'react-router';
+import { useParams, useLocation, useNavigate } from 'react-router';
 import LogoBar from '../components/logo-bar';
 import HotelHeroSection from '../components/hotel-hero-section';
 import MaxWidthWrapper from '../components/max-width-wrapper';
@@ -14,8 +14,8 @@ import GDPRBanner from '../components/gdpr';
 import { hotelDetails } from '../lib/constants';
 
 const Hotel = () => {
-  const { hotelName } = useParams();
-  const location = useLocation();
+  const { hotelName, lang } = useParams();
+  const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('overview');
   
   // Find the hotel data based on the hotel name
@@ -47,7 +47,7 @@ const Hotel = () => {
   return (
     <div>
       <GDPRBanner />
-      <LogoBar />
+      <LogoBar currentLang={lang} />
       <HotelHeroSection 
         image={item.heroImage} 
         location={item.location} 
@@ -65,7 +65,7 @@ const Hotel = () => {
                 activeSection === 'overview' ? 'text-blue-500' : 'text-white'
               }`}
             >
-              Overview
+              {lang === 'fr' ? 'Aperçu' : 'Overview'}
             </button>
             <button 
               onClick={() => scrollToSection(photosRef, 'facilities')} 
@@ -73,7 +73,7 @@ const Hotel = () => {
                 activeSection === 'facilities' ? 'text-blue-500' : 'text-white'
               }`}
             >
-              Facilities
+              {lang === 'fr' ? 'Équipements' : 'Facilities'}
             </button>
             <button 
               onClick={() => scrollToSection(roomRef, 'room')} 
@@ -81,7 +81,7 @@ const Hotel = () => {
                 activeSection === 'room' ? 'text-blue-500' : 'text-white'
               }`}
             >
-              Room
+              {lang === 'fr' ? 'Chambre' : 'Room'}
             </button>
             <button 
               onClick={() => scrollToSection(locationRef, 'location')} 
@@ -89,7 +89,7 @@ const Hotel = () => {
                 activeSection === 'location' ? 'text-blue-500' : 'text-white'
               }`}
             >
-              Location
+              {lang === 'fr' ? 'Emplacement' : 'Location'}
             </button>
           </div>
         </MaxWidthWrapper>

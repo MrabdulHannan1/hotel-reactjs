@@ -1,5 +1,5 @@
 import {React} from 'react'
-import { Route, Routes } from 'react-router'
+import { Route, Routes, Navigate } from 'react-router'
 import Home from './pages/home'
 import About from './pages/about'
 import Hotel from './pages/hotel'
@@ -9,10 +9,14 @@ const App = () => {
  
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/hotel/:hotelName" element={<Hotel />} />
+      {/* Redirect root to English version */}
+      <Route path="/" element={<Navigate to="/en" replace />} />
+      
+      {/* Language-specific routes */}
+      <Route path="/:lang" element={<Home />} />
+      <Route path="/:lang/about" element={<About />} />
+      <Route path="/:lang/contact" element={<Contact />} />
+      <Route path="/:lang/hotel/:hotelName" element={<Hotel />} />
     </Routes>
   )
 }

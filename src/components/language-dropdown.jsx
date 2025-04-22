@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { CiGlobe } from "react-icons/ci"
 import { IoChevronDown } from "react-icons/io5"
+import { useParams, useNavigate, useLocation } from 'react-router'
 
 // Language options with flags
 const languages = [
@@ -20,10 +21,21 @@ const languages = [
 //   { code: "ar", name: "Arabic", flag: "🇸🇦" },
 // ]
 
-export function LanguageDropdown() {
+export function LanguageDropdown({ currentLang = 'en' }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0])
+  const [selectedLanguage, setSelectedLanguage] = useState(languages.find(lang => lang.code === currentLang) || languages[0])
   const dropdownRef = useRef(null)
+  const navigate = useNavigate()
+  const location = useLocation()
+  const { hotelName } = useParams()
+
+  // Update selected language when currentLang changes
+  useEffect(() => {
+    const newLang = languages.find(lang => lang.code === currentLang)
+    if (newLang) {
+      setSelectedLanguage(newLang)
+    }
+  }, [currentLang])
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -39,10 +51,23 @@ export function LanguageDropdown() {
     }
   }, [])
 
-  // Select language and trigger Google Translate
+  // Select language and navigate to the correct URL
   const selectLanguage = (language) => {
     setSelectedLanguage(language)
     setIsOpen(false)
+
+    // Get the current path without the language prefix
+    const currentPath = location.pathname
+    const pathWithoutLang = currentPath.split('/').slice(2).join('/')
+    
+    // Construct the new URL with the selected language
+    let newPath = `/${language.code}`
+    if (pathWithoutLang) {
+      newPath += `/${pathWithoutLang}`
+    }
+
+    // Navigate to the new URL
+    navigate(newPath)
 
     // Wait for Google Translate to be fully loaded
     const checkAndChangeLanguage = () => {
