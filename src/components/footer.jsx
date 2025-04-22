@@ -1,9 +1,11 @@
 import React from 'react'
 import MaxWidthWrapper from './max-width-wrapper'
 import FooterLogo from '../assets/footer-logo.png'
-import { Link } from 'react-router'
+import { Link, useParams } from 'react-router'
 
 const Footer = () => {
+  const { lang = 'en' } = useParams();
+
   return (
     // <footer className='bg-myFooterBg'>
     //   <MaxWidthWrapper>
@@ -37,17 +39,17 @@ const Footer = () => {
     <footer className='w-full py-4 bg-myFooterBg'>
       <MaxWidthWrapper>
         <div className='flex items-center justify-center gap-6 md:gap-22'>
-          <Link to='/about'>
+          <Link to={`/${lang}/about`}>
             <p className='text-base md:text-lg font-bold text-white'>
               About us
             </p>
           </Link>
-          <Link to='/'>
-          <span className="font-gilroy text-white
-font-extrabold text-xl">
-  Paris Hotel Kleber .com
-</span>          </Link>
-          <Link to='/contact'>
+          <Link to={`/${lang}`}>
+            <span className="font-gilroy text-white font-extrabold text-xl">
+              Paris Hotel Kleber .com
+            </span>
+          </Link>
+          <Link to={`/${lang}/contact`}>
             <p className='text-base md:text-lg font-bold text-white'>
               Contact us
             </p>
