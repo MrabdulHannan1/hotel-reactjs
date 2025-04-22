@@ -27,12 +27,12 @@ const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facili
   };
   return (
     <section id='overview' className='my-10'>
-      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative overflow-hidden'>
+      <div className='w-full mt-10 relative overflow-hidden'>
         <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {
             facilitiesSlider.map((item) => (
               <div key={item.id} className="w-full h-full">
-                <img src={item} className="w-full h-full object-cover" alt='image' />
+                <img src={item} className="w-full h-60 md:h-80 lg:h-120 xl:h-140 object-cover" alt='image' />
               </div>
             ))
           }
@@ -46,7 +46,7 @@ const HotelFacilitiesSection = ({ facilitiesDetails1, facilitiesDetails2, facili
           </button>
         </div>
       </div>
-      <div className='bg-black/80'>
+      <div className='bg-black/80 -mt-2'>
         <MaxWidthWrapper>
           <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
             Facilities

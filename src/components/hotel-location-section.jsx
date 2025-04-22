@@ -8,8 +8,8 @@ const HotelLocationSection = ({ loactionDetails, planes, trains, automobiles, lo
 
   return (
     <section id='location' className='my-10'>
-      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative'>
-        <img src={locationImage} className='w-full h-100 md:h-120 lg:h-140 object-cover' alt='overviewImage' />
+      <div className='w-full mt-10 relative'>
+        <img src={locationImage} className='w-full h-60 md:h-80 lg:h-120 xl:h-140 object-cover' alt='overviewImage' />
         <div className='bg-black/80 absolute bottom-0 left-0 right-0'>
           <MaxWidthWrapper>
             <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>

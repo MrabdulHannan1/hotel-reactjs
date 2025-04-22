@@ -27,12 +27,12 @@ const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, faciliti
   };
   return (
     <section id='overview' className='my-10'>
-      <div className='w-full h-100 md:h-120 lg:h-140 mt-10 relative overflow-hidden'>
+      <div className='w-full mt-10 relative overflow-hidden'>
         <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {
             roomsSlider.map((item) => (
               <div key={item.id} className="w-full h-full">
-                <img src={item} className="w-full h-full object-fill" alt='image' />
+                <img src={item} className="w-full h-60 md:h-80 lg:h-120 xl:h-140 object-fill" alt='image' />
               </div>
             ))
           }
@@ -46,7 +46,7 @@ const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, faciliti
           </button>
         </div>
       </div>
-      <div className='bg-black/80'>
+      <div className='bg-black/80 -mt-2'>
         <MaxWidthWrapper>
           <p className='text-white text-2xl font-semibold tracking-[7.02px] leading-normal py-2'>
             Rooms
@@ -74,8 +74,8 @@ const HotelRoomSection = ({ roomDetails, roomImage, facilitiesDetails1, faciliti
             {
               Array.isArray(slider) && slider.length > 0 ? (
                 slider.map((item, index) => (
-                  <div key={index} className='p-4'>
-                    <img src={item} className='w-100 h-100 md:h-100 lg:h-100 object-cover cursor-pointer hover:scale-105 duration-500' alt={`Facility ${index + 1}`} />
+                  <div key={index} className='p-2 md:p-4'>
+                    <img src={item} className='w-60 h-60 md:h-80 md:w-80 lg:w-100 lg:h-100 object-cover cursor-pointer hover:scale-105 duration-500' alt={`Facility ${index + 1}`} />
                   </div>
                 ))
               ) : (
