@@ -9,7 +9,9 @@ const HotelListBody = ({ hotels }) => {
   const [selectedMapUrl, setSelectedMapUrl] = useState(null);
 
   const handleSeeDetails = (item) => {
-    navigate('/hotel', { state: { item } });
+    // Convert hotel name to URL-friendly format
+    const hotelName = item.hotelName.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/hotel/${hotelName}`);
   };
 
   return (

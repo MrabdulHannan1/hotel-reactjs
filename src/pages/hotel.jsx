@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useLocation } from 'react-router';
+import { useParams, useLocation } from 'react-router';
 import LogoBar from '../components/logo-bar';
 import HotelHeroSection from '../components/hotel-hero-section';
 import MaxWidthWrapper from '../components/max-width-wrapper';
@@ -11,13 +11,20 @@ import Footer from '../components/footer';
 import HotelFacilitiesSection from '../components/hotel-facilities-section';
 import HotelRoomSection from '../components/hotel-room-section';
 import GDPRBanner from '../components/gdpr';
+import { hotelDetails } from '../lib/constants';
+
 const Hotel = () => {
+  const { hotelName } = useParams();
   const location = useLocation();
-  const { item } = location.state || {};
   const [activeSection, setActiveSection] = useState('overview');
   
+  // Find the hotel data based on the hotel name
+  const item = hotelDetails.find(hotel => 
+    hotel.hotelName.toLowerCase().replace(/\s+/g, '-') === hotelName.toLowerCase()
+  );
+
   if (!item) {
-    return <p>No hotel data available.</p>;
+    return <p>Hotel not found.</p>;
   }
 
   // Scroll to top when page loads
@@ -39,7 +46,7 @@ const Hotel = () => {
 
   return (
     <div>
-
+      <GDPRBanner />
       <LogoBar />
       <HotelHeroSection 
         image={item.heroImage} 
@@ -139,9 +146,7 @@ const Hotel = () => {
           address={item.address}
           addressURL={item.addressURL}
         />
-        
       </div>
-
 
       <Footer />
     </div>
